@@ -1,6 +1,14 @@
+
+body{
+    margin:0;
+    font-family: Helvetica, Arial, sans-serif; ;
+}
+
+
 .header{
     background-color: #FFDC00;
     width: 100%;
     z-index: 2;
     position: relative;
+    padding:60px;
 }
