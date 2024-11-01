@@ -12,3 +12,8 @@ body{
     position: relative;
     padding:60px;
 }
+
+.header-bilde{
+    width: 60px;
+    height: 36px;
+}
