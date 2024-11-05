@@ -169,3 +169,23 @@ header hr {
 }
 
 /* Header End */
+
+/* Slogan One Start */
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+#slogan-one{
+    background-color: var(--clr-grayblue);
+}
+
+#slogan-one p{
+    margin: 0 6rem 0 6rem;
+    text-align: center;
+    padding: 2rem 4rem 2rem 4rem;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    color: var(--clr-darkblue);
+    font-weight: lighter;
+}
