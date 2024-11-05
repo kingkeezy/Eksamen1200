@@ -15,3 +15,53 @@ body{
     padding: 0;
     font-family: "Scope One", serif;
 }
+
+/*lager en boks for hele footeren*/
+.Footer-container{
+    background-color:var(--clr-darkblue);
+    padding-bottom: 4rem; 
+    position:fixed;
+    bottom:0;
+    width: 100%;
+    
+}
+
+/*lager en boks inni Footer-container for å ha kontroll på innholdet*/
+.Footer{
+    width:80%;
+    background-color: var(--clr-darkblue);
+    color:var(--clr-grayblue);
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    margin:0 auto;
+}
+
+/*for hoved headingen*/
+.Footer-heading{
+    width: 100%;
+    display:flex;
+    background-color:var(--clr-mediumblue);
+    flex-direction: column;
+    text-align: center;
+    flex:1;
+   
+    
+}
+
+.info{
+    display:flex;
+    text-align: center;
+    position: relative;
+    color:var(--clr-lightblue);
+}
+.info::after{
+    content: "";
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    bottom:0;
+    height: 2px;
+    background:var(--clr-grayblue);
+    
+}
