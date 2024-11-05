@@ -27,6 +27,7 @@ nav {
     align-items: center;
     background-color: var(--clr-mediumblue);
     padding: 0 3rem 0 3rem;
+    text-transform: uppercase;
 }
 
 nav img {
@@ -78,7 +79,7 @@ nav ul a i {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: var(--clr-lightblue);
+    background-color: var(--clr-paleblue);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 10px;
@@ -97,7 +98,8 @@ nav ul a i {
 }
 
 .dropdown-menu li a:hover {
-    background-color: var(--clr-grayblue);
+    background-color: var(--clr-mediumblue);
+    color: var(--clr-paleblue);
     border-radius: 3px;
 }
 
@@ -149,11 +151,12 @@ header hr {
     color: var(--clr-paleblue);
     max-width: 80rem;
     padding-bottom: 3rem;
+    text-transform: uppercase;
 }
 
 #studieinformasjon .info {
-    width: 8rem;
-    padding: 1rem 6rem 1rem 6rem;
+    width: 14rem;
+    padding: 1rem 2rem 1rem 2rem;
 }
 
 #studieinformasjon .info h3 {
@@ -166,6 +169,19 @@ header hr {
 #studieinformasjon .info h3:first-child {
     color: white;
     font-weight: bolder;
+}
+
+header a button {
+
+    padding: 1rem 3rem 1rem 3rem;
+    color: white;
+    background-color: var(--clr-darkblue);
+    border-radius: 50px;
+    border: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 3rem;
 }
 
 /* Header End */
