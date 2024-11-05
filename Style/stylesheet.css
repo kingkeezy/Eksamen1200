@@ -112,7 +112,6 @@ header {
     background-color: var(--clr-mediumblue);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     color: var(--clr-paleblue);
     text-align: center;
 }
@@ -136,28 +135,32 @@ header hr {
     width: 80%;
 }
 
-/* Header End */
+#studieinformasjonwrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
-/* Main Start */
 #studieinformasjon {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    background-color: var(--clr-mediumblue);
+    /* background-color: var(--clr-mediumblue); */
     color: var(--clr-paleblue);
-    /* max-width: 50rem; */
+    max-width: 80rem;
+    padding-bottom: 3rem;
 }
 
 #studieinformasjon .info {
-    padding: 3rem;
-
+    width: 8rem;
+    padding: 1rem 6rem 1rem 6rem;
 }
 
 #studieinformasjon .info h3 {
     padding: 0;
     margin: 0;
     font-weight: lighter;
+    text-align: left;
 }
 
 #studieinformasjon .info h3:first-child {
@@ -165,4 +168,4 @@ header hr {
     font-weight: bolder;
 }
 
-/* Main End */
+/* Header End */
