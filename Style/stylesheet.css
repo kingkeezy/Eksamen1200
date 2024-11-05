@@ -1,8 +1,8 @@
-/* The font we will be using troughout the website */
+/* Font import */
 @import url('https://fonts.googleapis.com/css2?family=Scope+One&display=swap');
 
-/* Creating variables so it will be quicker in the long run */
-:root{
+/* Color variables */
+:root {
     --clr-darkblue: #023E8A;
     --clr-mediumblue: #0077B6;
     --clr-lightblue: #90E0EF;
@@ -10,12 +10,11 @@
     --clr-grayblue: #CFE6FF;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: "Scope One", serif;
 }
-
 
 /* Navbar Start */
 nav {
@@ -35,22 +34,67 @@ nav ul {
     font-size: 30px;
     display: flex;
     flex-direction: row;
+    margin-right: 2rem;
 }
 
-nav ul a:first-child {
-    margin-right: 5rem;
+nav ul li {
+    position: relative;
 }
 
 nav ul a {
     color: white;
     text-decoration: none;
     display: flex;
-    flex-direction: row;
     align-items: center;
+    padding: 0.5rem 1rem;
 }
 
 nav ul a i {
-    margin-left: 1rem;
+    margin-left: 0.5rem;
+}
+
+.menu-toggle-label {
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--clr-lightblue);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 10px;
+    list-style-type: none;
+    margin: 0;
+    z-index: 1; 
+}
+
+.dropdown-menu li {
+    padding: 8px 12px;
+}
+
+.dropdown-menu li a {
+    color: var(--clr-darkblue);
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    background-color: var(--clr-grayblue);
+    border-radius: 3px;
+}
+
+#menu-toggle:checked + .menu-toggle-label + .dropdown-menu {
+    display: block;
 }
 /* Navbar End */
 
@@ -62,6 +106,7 @@ header {
     justify-content: center;
     color: var(--clr-paleblue);
     text-align: center;
+    padding: 2rem 0;
 }
 
 header h1 {
@@ -71,6 +116,7 @@ header h1 {
 
 header h1 p {
     font-size: 2rem;
+    margin-top: 0;
 }
 
 header h1 span {
