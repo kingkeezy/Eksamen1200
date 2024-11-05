@@ -15,3 +15,70 @@ body{
     padding: 0;
     font-family: "Scope One", serif;
 }
+
+
+/* Navbar Start */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--clr-mediumblue);
+}
+
+nav img {
+    padding-left: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul a:first-child {
+    margin-right: 5rem;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav ul a i {
+    margin-left: 1rem;
+}
+/* Navbar End */
+
+/* Header Start */
+header {
+    background-color: var(--clr-mediumblue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--clr-paleblue);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+header h1 p {
+    font-size: 2rem;
+}
+
+header h1 span {
+    color: var(--clr-darkblue);
+}
+
+header hr {
+    color: var(--clr-paleblue);
+    width: 80%;
+}
+/* Header End */
