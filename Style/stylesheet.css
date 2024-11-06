@@ -266,3 +266,66 @@ header hr {
 }
 
 /* Slogan Two End */
+
+/* Studenthistorier Start */
+#studenthistorier {
+    padding: 5rem 4rem 5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-paleblue);
+    color: var(--clr-darkblue);
+    text-transform: uppercase;
+}
+
+#studenthistorier h1 {
+    font-size: 2.5rem;
+}
+
+#studenthistorier h2 {
+    color: var(--clr-mediumblue);
+}
+
+#studenthistorier p {
+    font-size: 1.7rem;
+    text-transform: initial;
+}
+
+#card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    max-width: 50rem;
+    background-color: var(--clr-grayblue);
+    border-radius: 50px;
+    margin: 0 0 1rem 0;
+}
+
+.card:first-child {
+    padding: 2rem;
+}
+
+.card img {
+    border-radius: 50px;
+    width: 100%;
+}
+
+#studenthistorier a {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#studenthistorier button {
+    background-color: var(--clr-darkblue);
+    color: var(--clr-paleblue);
+    text-decoration: none;
+    font-size: 2rem;
+    border-radius: 50px;
+    padding: 1rem 4rem 1rem 4rem;
+    border: none;
+}
+
+/* Studenthistorier End */
