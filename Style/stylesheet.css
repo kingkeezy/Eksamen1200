@@ -54,7 +54,7 @@ section{
 
 .opptakskrav-container, .hvordan-undervisningen-container, .hva-laerer-du-container, .studiets-oppbygning-container, .hva-koster-det-container, .hva-kan-du-jobbe-som-container, .utveksling-container, .videre-studiemuligheter-container{
     height: auto;
-    width: 100%;
+    width: 50%;
     padding-top: 4rem;
     padding-left: 5rem;
     display: none;
