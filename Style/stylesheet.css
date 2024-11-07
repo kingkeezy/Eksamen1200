@@ -117,7 +117,19 @@ section svg{
 /* Tables */
 table {
     background-color: var(--clr-mediumblue);
-    
+    padding: 2rem;
+    border-radius: 10px;
+    color: var(--clr-paleblue);
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+table h2 {
+    text-align: left;
+}
+
+table td:last-child {
+    text-align: right;
 }
 
 /* Spørsmål section end */
