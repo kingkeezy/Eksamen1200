@@ -4,7 +4,6 @@
     src: url('Media/Agrandir-Regular.otf');
 }
 
-
 /* Color variables */
 :root {
     --clr-darkblue: #023E8A;
@@ -21,7 +20,7 @@ body {
     overflow-x: hidden;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
 }
@@ -93,7 +92,6 @@ nav ul a i {
     list-style-type: none;
     margin: 0;
     z-index: 1;
-
 }
 
 .dropdown-menu li {
@@ -114,7 +112,6 @@ nav ul a i {
 #menu-toggle:checked+.menu-toggle-label+.dropdown-menu {
     display: block;
 }
-
 /* Navbar End */
 
 /* Header Start */
@@ -159,7 +156,6 @@ header hr {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* background-color: var(--clr-mediumblue); */
     color: var(--clr-paleblue);
     max-width: 72rem;
     padding-bottom: 3rem;
@@ -204,16 +200,15 @@ header hr {
     color: var(--clr-darkblue);
     background: var(--clr-paleblue);
 }
-
 /* Header End */
 
-/* Slogan One Start */
-#slogan-one{
+/* Content divider (Innsikt) Start */
+#content-divider-innsikt{
     background-color: var(--clr-grayblue);
     width: 100%;
 }
 
-#slogan-one p{
+#content-divider-innsikt p{
     margin: 0 6rem 0 6rem;
     text-align: center;
     padding: 2rem 4rem 2rem 4rem;
@@ -222,55 +217,58 @@ header hr {
     color: var(--clr-darkblue);
     font-weight: lighter;
 }
-/* Slogan One End */
+/* Content divider (Innsikt) End */
 
-/* Slogan Two Start */
-#slogan-two {
+/* Content divider (Faglig Leder) Start */
+#faglig-leder {
     background-color: var(--clr-mediumblue); /* Change color to grayblue when the other sections have been added on */
     padding: 0 4rem 2rem 4rem;
     width: 100%;
     color: var(--clr-darkblue);   
 }
 
-#slogan-two h3 {
+#faglig-leder h3 {
     text-transform: uppercase;
     font-weight: lighter;
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
-.content-flex {
+.faglig-leder-flex {
     display: flex;
     align-items: center; 
     transition: all 0.3s;
 }
 
-.content-flex:hover{
+.faglig-leder-flex:hover{
     transform: translateX(20px);
 }
 
-.content-flex img {
+.faglig-leder-flex img {
     height: 120px;
     width: 90px;
     margin-right: 1rem; 
 }
 
-.text-content p {
-    margin: 0.5rem 0;
-    font-weight: lighter;
-    text-decoration: none;
-}
-
-.text-content a {
+.faglig-leder-flex a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: inherit;
 }
 
-#navn{
-    font-weight: bolder;
+#faglig-leder-info{
+    display: flex;
+    flex-direction: column;
 }
 
-/* Slogan Two End */
+.faglig-leder-flex p {
+    margin: 0.2rem 0;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+/* Content divider (Faglig Leder) End */
 
 /* Studenthistorier Start */
 #studenthistorier {
@@ -282,7 +280,7 @@ header hr {
     text-transform: uppercase;
 }
 
-.lighter{
+#studenthistorier-title{
     font-weight: lighter;
 }
 
@@ -295,6 +293,13 @@ h1 a, #studenthistorier h1{
 #studenthistorier p {
     font-size: 1.5rem;
     text-transform: initial;
+}
+
+#studenthistorier p a, #studenthistorier h2 a{
+    margin-top: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color:var(--clr-mediumblue);
 }
 
 #card-container {
@@ -327,19 +332,11 @@ h1 a, #studenthistorier h1{
     transform: scale(1.05);
 }
 
-#studenthistorier p a, #studenthistorier h2 a{
-    margin-top: 2rem;
-    text-align: center;
-    text-decoration: none;
-    color:var(--clr-mediumblue);
-}
-
 #button-studenthistorier{
     max-width: 15rem;
     margin-top: 2rem;
     margin-bottom: 0;
 }
-
 
 #button-studenthistorier:hover{
     background-color: var(--clr-lightblue);
@@ -349,7 +346,7 @@ h1 a, #studenthistorier h1{
 /* Studenthistorier End */
 
 /* Slogan Three Start */
-#slogan-three{
+#content-divider-studiested{
     width: 100%;
     text-align: center;
     text-transform: uppercase;
@@ -358,5 +355,14 @@ h1 a, #studenthistorier h1{
     font-weight: bold;
     font-size: 2rem;
     line-height: 0.8rem;
+}
+
+#content-divider-studiested a{
+    text-decoration: none;
+    color: var(--clr-darkblue);
+}
+
+#studiested{
+    font-weight: lighter;
 }
 /* Slogan Three End */

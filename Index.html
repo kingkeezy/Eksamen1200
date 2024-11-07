@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matematisk modellering og datavitenskap – ingeniør - OsloMet</title>
+    <!-- Favicon -->
     <link rel="shortcut icon" href="Media/OsloMetRe-design.png">
-    <!-- A stylesheet for our icons on the website (search, menu, circle-plus, etc.) -->
+    <!-- A stylesheet for the icons on the website (search, menu, circle-plus, etc.) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -33,7 +34,7 @@
                     <p>Meny</p>
                     <i class="fa-solid fa-bars"></i>
                 </label>
-                <!-- Dropdown menu -->
+                <!-- Dropdown menu that is hidden until menu-toggle is checked -->
                 <ul class="dropdown-menu">
                     <li><a href="/">Hjem</a></li>
                     <li><a href="Sub-pages/Accessibility.html">Accessibility</a></li>
@@ -43,14 +44,17 @@
             </li>
         </ul>
     </nav>
-    <header class="container">
+
+    <header>
         <!-- Hero Section -->
         <h1>Matematisk modellering og
             <br>datavitenskap -
             <span>ingeniør</span><br>
             <p>Bachelorprogram</p>
         </h1>
+        <!-- A seperator-line between the title and info section -->
         <hr>
+        <!-- Info-section about the program -->
         <section id="studieinformasjonwrapper">
             <section id="studieinformasjon">
                 <div class="info">
@@ -83,53 +87,60 @@
                 </div>
             </section>
         </section>
+        <!-- <a> element that works as a button -->
         <a href="https://www.oslomet.no/studier/soknad-og-opptak/opptak-til-bachelor-aarsstudier" class="button-link">Slik søker du</a>
     </header>
 
-    <!-- Slogan number one (Innsikt i matematisk modeller...) -->
+    <!-- Content divider (Innsikt i matematisk modeller...) and also the start of main -->
     <main>
-        <section id="slogan-one" class="container">
-            <p>Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange praktiske og samfunnsnyttige oppgaver.</p>
+        <section id="content-divider-innsikt">
+            <p>Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange praktiske og samfunnsnyttige
+                oppgaver.</p>
         </section>
 
-        <!-- Slogan number two (Faglig Leder) -->
-        <section id="slogan-two" class="container">
+        <!-- Content divider (Faglig Leder) -->
+        <section id="faglig-leder">
             <h3>Faglig Leder</h3>
-            <div class="content-flex">
+            <div class="faglig-leder-flex">
+                <!-- Making the whole thing a link (same as on MatMod-website) -->
                 <a href="https://www.oslomet.no/om/ansatt/krhel3944/">
-                <img src="Media/faglig-leder.png" alt="Profil bilde til faglige lederen">
-                <div class="text-content">
-                    <p id="navn">Kristoffer Herland Hellton</p>
-                    <p>førsteamanuensis</p>
-                    <p>+47 672 37 240 | kristoffer.hellton@oslomet.no</p>
+                    <img src="Media/faglig-leder.png" alt="Profil bilde av faglige lederen">
+                    <!-- Aligns the text next to the image -->
+                    <div id="faglig-leder-info">
+                        <p><strong>Kristoffer Herland Hellton</strong></p>
+                        <p>førsteamanuensis</p>
+                        <p>+47 672 37 240 | kristoffer.hellton@oslomet.no</p>
+                    </div>
                 </a>
-                </div>
             </div>
         </section>
 
-        <section id="studenthistorier" class="container">
-            <h1 class="lighter">Studenthistorier</h1>
+        <!-- Studenthistorier section -->
+        <section id="studenthistorier">
+            <h1 id="studenthistorier-title">Studenthistorier</h1>
             <div id="card-container">
+                <!-- Left card -->
                 <div class="card">
                     <h2><a href="https://www.oslomet.no/studier/studenthistorier?student_story=147">Teknologi og Design</a></h2>
                     <h1><a href="https://www.oslomet.no/studier/studenthistorier/spa-fremtiden-matematikk-datavitenskap">Spå fremtiden med matematikk og datavitenskap</h1>
                     <p>Har du lyst til å finne ut hva som vil skje i fremtiden? Lær å bruke verktøy for å forutsi alt
                         fra været og strømprisene til utviklingen i boligmarkedet.</a></p>
                 </div>
+                <!-- Right card -->
                 <div class="card">
                     <a href="https://www.oslomet.no/studier/studenthistorier/spa-fremtiden-matematikk-datavitenskap"><img src="Media/guys_with_pc.jpg" alt="Guys with PC"></a>
                 </div>
             </div>
-            <a href="https://www.oslomet.no/studier/soknad-og-opptak/opptak-til-bachelor-aarsstudier" class="button-link" id="button-studenthistorier">Flere studenthistorier</a>
+            <!-- <a> element that works as a button -->
+            <a href="https://www.oslomet.no/studier/soknad-og-opptak/opptak-til-bachelor-aarsstudier"
+                class="button-link" id="button-studenthistorier">Flere studenthistorier</a>
         </section>
 
-        <!-- Slogan number three (Studiested) -->
-         <section id="slogan-three" class="container">
-            <p>Studiested</p>
-            <p class="lighter">Studiested Pilestredet</p>
-         </section>
-
-        
+        <!-- Content divider (Studiested) -->
+        <section id="content-divider-studiested">
+            <p><a href="#">Studiested</p>
+            <p id="studiested">Studiested Pilestredet</a></p>
+        </section>
     </main>
 </body>
 </html>
