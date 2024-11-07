@@ -113,4 +113,11 @@ section svg{
     font-weight: bold;
     
 }
+
+/* Tables */
+table {
+    background-color: var(--clr-mediumblue);
+    
+}
+
 /* Spørsmål section end */
