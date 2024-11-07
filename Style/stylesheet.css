@@ -23,3 +23,94 @@ main{
     display: flex;
     flex-direction: column;
 }
+
+/* Spørsmål section start */
+#vertical-text{
+    text-align: center;
+    position: fixed;
+    right:0;
+    top: 25%;
+    padding-right: 8rem;
+    height: 41%;
+    text-transform: uppercase;
+    color: var(--clr-mediumblue);
+    writing-mode: vertical-rl;
+}
+
+h3{
+    color: var(--clr-darkblue);
+}
+
+section{
+    height: auto;
+    flex-direction: row;
+    width: 100%;
+    background-color: var(--clr-paleblue);
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.opptakskrav-container, .hvordan-undervisningen-container, .hva-laerer-du-container, .studiets-oppbygning-container, .hva-koster-det-container, .hva-kan-du-jobbe-som-container, .utveksling-container, .videre-studiemuligheter-container{
+    height: auto;
+    width: 100%;
+    padding-top: 4rem;
+    padding-left: 5rem;
+    display: none;
+    flex-direction: column;
+    background-color: var(--clr-paleblue);
+}
+
+.opptakskrav-container .close-sidebar-button, .hvordan-undervisningen-container .close-sidebar-button, .hva-laerer-du-container .close-sidebar-button, .studiets-oppbygning-container .close-sidebar-button, .hva-koster-det-container .close-sidebar-button, .hva-kan-du-jobbe-som-container .close-sidebar-button, .utveksling-container .close-sidebar-button, .videre-studiemuligheter-container .close-sidebar-button{
+    padding: 0;
+}
+
+section p, ul{
+    padding: 0 0 10px 40px;
+    color: var(--clr-mediumblue);
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+
+section svg{
+    fill: var(--clr-darkblue);
+}
+
+#sidebar-active, #sidebar-active2,#sidebar-active3,#sidebar-active4,#sidebar-active5, #sidebar-active6, #sidebar-active7, #sidebar-active8{
+    display: none;
+}
+
+.open-sidebar-button, .close-sidebar-button{
+    padding-top: 4rem;
+    padding-left: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    color: var(--clr-mediumblue);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    
+}
+
+
+/* Open Sidebar when Checkbox is Checked */
+#sidebar-active:checked ~ .opptakskrav-container, #sidebar-active2:checked ~ .hva-laerer-du-container, #sidebar-active3:checked ~ .studiets-oppbygning-container, #sidebar-active4:checked ~ .hvordan-undervisningen-container, #sidebar-active5:checked ~ .hva-koster-det-container, #sidebar-active6:checked ~ .hva-kan-du-jobbe-som-container, #sidebar-active7:checked ~ .utveksling-container, #sidebar-active8:checked ~ .videre-studiemuligheter-container{
+    display: block;
+}
+
+#sidebar-active:checked ~ .open-sidebar-button, #sidebar-active2:checked ~ .open-sidebar-button, #sidebar-active3:checked ~ .open-sidebar-button, #sidebar-active4:checked ~ .open-sidebar-button, #sidebar-active5:checked ~ .open-sidebar-button, #sidebar-active6:checked ~ .open-sidebar-button, #sidebar-active7:checked ~ .open-sidebar-button, #sidebar-active8:checked ~ .open-sidebar-button {
+    display: none; 
+}
+
+.opptakskrav-container a{
+    color: var(--clr-darkblue);
+    text-decoration: none;
+    /* text-decoration-color: #006aff;
+    text-decoration-thickness: 2px; */
+    font-weight: bold;
+    
+}
+/* Spørsmål section end */
