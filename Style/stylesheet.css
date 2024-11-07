@@ -4,6 +4,48 @@
     src: url('Media/Agrandir-Regular.otf');
 }
 
+/* 2xl */
+@media (max-width: 1536px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+  
+  /* xl */
+  @media (max-width: 1280px) {
+    .container {
+      max-width: 1024px;
+    }
+  }
+  
+  /* lg */
+  @media (max-width: 1024px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+  
+  /* md */
+  @media (max-width: 768px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+  
+  /* sm */
+  @media (max-width: 640px) {
+    .container {
+      max-width: 475px;
+    }
+  }
+  
+  /* xs */
+  @media (max-width: 475px) {
+    .container {
+      width: 100%;
+    }
+  }
+
 /* Color variables */
 :root {
     --clr-darkblue: #023E8A;
@@ -17,11 +59,22 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Agrandir", sans-serif;
+    overflow-x: hidden;
 }
 
 main{
     display: flex;
     flex-direction: column;
+}
+
+.container{
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border: 2px solid red;
+    margin-bottom: 1rem;
 }
 
 /* Navbar Start */
@@ -207,6 +260,7 @@ header hr {
 /* Slogan One Start */
 #slogan-one{
     background-color: var(--clr-grayblue);
+    width: 100%;
 }
 
 #slogan-one p{
@@ -224,6 +278,7 @@ header hr {
 #slogan-two {
     background-color: var(--clr-mediumblue); /* Change color to grayblue when the other sections have been added on */
     padding: 0 4rem 2rem 4rem;
+    width: 100%;
     color: var(--clr-darkblue);   
 }
 
@@ -300,14 +355,14 @@ h1 a, #studenthistorier h1{
 }
 
 .card {
-    max-width: 50rem;
+    max-width: 45rem;
     background-color: var(--clr-grayblue);
     border-radius: 50px;
-    margin: 0 0 1rem 0;
+    margin: 0 1rem 1rem 0;
 }
 
 .card:first-child {
-    padding: 2rem;
+    padding: 2rem 2rem 0 2rem;
 }
 
 .card img {
@@ -353,6 +408,7 @@ h1 a, #studenthistorier h1{
 
 /* Slogan Three Start */
 #slogan-three{
+    width: 100%;
     text-align: center;
     text-transform: uppercase;
     background-color: var(--clr-mediumblue);
@@ -361,3 +417,4 @@ h1 a, #studenthistorier h1{
     font-size: 2rem;
     line-height: 0.8rem;
 }
+/* Slogan Three End */
