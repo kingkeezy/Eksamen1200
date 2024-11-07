@@ -37,7 +37,7 @@ main{
     writing-mode: vertical-rl;
 }
 
-h3{
+h3, h5{
     color: var(--clr-darkblue);
 }
 
@@ -52,7 +52,7 @@ section{
     font-weight: lighter;
 }
 
-.opptakskrav-container, .hvordan-undervisningen-container, .hva-laerer-du-container, .studiets-oppbygning-container, .hva-koster-det-container, .hva-kan-du-jobbe-som-container, .utveksling-container, .videre-studiemuligheter-container{
+.opptakskrav-container, .hvordan-undervisningen-container, .hva-laerer-du-container, .studiets-oppbygning-container, .hva-koster-det-container, .hva-kan-du-jobbe-som-container, .utveksling-container, .videre-studiemuligheter-container, .statiske-metoder-info{
     height: auto;
     width: 50%;
     padding-top: 4rem;
@@ -62,7 +62,7 @@ section{
     background-color: var(--clr-paleblue);
 }
 
-.opptakskrav-container .close-sidebar-button, .hvordan-undervisningen-container .close-sidebar-button, .hva-laerer-du-container .close-sidebar-button, .studiets-oppbygning-container .close-sidebar-button, .hva-koster-det-container .close-sidebar-button, .hva-kan-du-jobbe-som-container .close-sidebar-button, .utveksling-container .close-sidebar-button, .videre-studiemuligheter-container .close-sidebar-button{
+.opptakskrav-container .close-sidebar-button, .hvordan-undervisningen-container .close-sidebar-button, .hva-laerer-du-container .close-sidebar-button, .studiets-oppbygning-container .close-sidebar-button, .hva-koster-det-container .close-sidebar-button, .hva-kan-du-jobbe-som-container .close-sidebar-button, .utveksling-container .close-sidebar-button, .videre-studiemuligheter-container .close-sidebar-button, .statiske-metoder-info .close-sidebar-button{
     padding: 0;
 }
 
@@ -73,12 +73,11 @@ section p, ul{
     font-size: 1rem;
 }
 
-
 section svg{
     fill: var(--clr-darkblue);
 }
 
-#sidebar-active, #sidebar-active2,#sidebar-active3,#sidebar-active4,#sidebar-active5, #sidebar-active6, #sidebar-active7, #sidebar-active8{
+#sidebar-active, #sidebar-active2,#sidebar-active3,#sidebar-active4,#sidebar-active5, #sidebar-active6, #sidebar-active7, #sidebar-active8, #statiske-metoder{
     display: none;
 }
 
@@ -92,16 +91,15 @@ section svg{
     color: var(--clr-mediumblue);
     margin-bottom: 10px;
     text-transform: uppercase;
-    
 }
 
 
 /* Open Sidebar when Checkbox is Checked */
-#sidebar-active:checked ~ .opptakskrav-container, #sidebar-active2:checked ~ .hva-laerer-du-container, #sidebar-active3:checked ~ .studiets-oppbygning-container, #sidebar-active4:checked ~ .hvordan-undervisningen-container, #sidebar-active5:checked ~ .hva-koster-det-container, #sidebar-active6:checked ~ .hva-kan-du-jobbe-som-container, #sidebar-active7:checked ~ .utveksling-container, #sidebar-active8:checked ~ .videre-studiemuligheter-container{
+#sidebar-active:checked ~ .opptakskrav-container, #sidebar-active2:checked ~ .hva-laerer-du-container, #sidebar-active3:checked ~ .studiets-oppbygning-container, #sidebar-active4:checked ~ .hvordan-undervisningen-container, #sidebar-active5:checked ~ .hva-koster-det-container, #sidebar-active6:checked ~ .hva-kan-du-jobbe-som-container, #sidebar-active7:checked ~ .utveksling-container, #sidebar-active8:checked ~ .videre-studiemuligheter-container, #statiske-metoder:checked ~ .statiske-metoder-info{
     display: block;
 }
 
-#sidebar-active:checked ~ .open-sidebar-button, #sidebar-active2:checked ~ .open-sidebar-button, #sidebar-active3:checked ~ .open-sidebar-button, #sidebar-active4:checked ~ .open-sidebar-button, #sidebar-active5:checked ~ .open-sidebar-button, #sidebar-active6:checked ~ .open-sidebar-button, #sidebar-active7:checked ~ .open-sidebar-button, #sidebar-active8:checked ~ .open-sidebar-button {
+#sidebar-active:checked ~ .open-sidebar-button, #sidebar-active2:checked ~ .open-sidebar-button, #sidebar-active3:checked ~ .open-sidebar-button, #sidebar-active4:checked ~ .open-sidebar-button, #sidebar-active5:checked ~ .open-sidebar-button, #sidebar-active6:checked ~ .open-sidebar-button, #sidebar-active7:checked ~ .open-sidebar-button, #sidebar-active8:checked ~ .open-sidebar-button, #statiske-metoder:checked ~ .open-sidebar-button {
     display: none; 
 }
 
@@ -114,10 +112,22 @@ section svg{
     
 }
 
+#videre-studiemuligheter-info h5{
+    padding-left: 40px;
+    margin-bottom: 0;
+}
+
+#videre-studiemuligheter-info p{
+    margin-top: 5px;
+}
+
+#videre-studiemuligheter-info a{
+    text-decoration: none;
+}
+
 /* Tables */
 table {
     background-color: var(--clr-mediumblue);
-    
 }
 
 /* Spørsmål section end */
