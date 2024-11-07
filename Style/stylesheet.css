@@ -1,7 +1,7 @@
 /* The font we will be using troughout the website */
 @import url('https://fonts.googleapis.com/css2?family=Scope+One&display=swap');
 
-/* Creating variables so it will be quicker in the long run */
+/* Cre| ating variables so it will be quicker in the long run */
 :root{
     --clr-darkblue: #023E8A;
     --clr-mediumblue: #0077B6;
@@ -16,46 +16,32 @@ body{
     font-family: "Scope One", serif;
 }
 
-/*lager en boks for hele footeren*/
-.Footer-container{
-    background-color:var(--clr-darkblue);
-    padding-bottom: 4rem; 
-    position:fixed;
-    bottom:0;
-    width: 100%;
-    
-}
-
-/*lager en boks inni Footer-container for å ha kontroll på innholdet*/
-.Footer{
-    width:80%;
-    background-color: var(--clr-darkblue);
-    color:var(--clr-grayblue);
-    display:flex;
+#Slogan-tree{
+    display: flex;
     justify-content: center;
-    flex-wrap:wrap;
-    margin:0 auto;
-}
-
-/*for hoved headingen*/
-.Footer-heading{
-    width: 100%;
-    display:flex;
-    background-color:var(--clr-mediumblue);
-    flex-direction: column;
     text-align: center;
-    flex:1;
-   
-    
+    background-color: var(--clr-mediumblue);
+    text-transform: uppercase;
+    color:var(--clr-darkblue);
 }
 
-.info{
-    display:flex;
+/*Footer start*/
+footer{
+    background-color: var(--clr-darkblue);
+    width: 100%;
+}
+#Fmain-overskrift{
     text-align: center;
     position: relative;
-    color:var(--clr-lightblue);
+    color: var(--clr-lightblue);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+
+
 }
-.info::after{
+
+#Fmain-overskrift:after{
     content: "";
     position: absolute;
     left: 15%;
@@ -63,5 +49,94 @@ body{
     bottom:0;
     height: 2px;
     background:var(--clr-grayblue);
+}
+
+.Overskrift-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 10rem 2rem 10rem;
+    max-width: 80%;
+}
+
+#Abonner{
+    border-radius: 40px;
+    border: 5px solid var(--clr-paleblue);
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--clr-paleblue);
+    font-size: 700;
+    align-self: center;
+    margin-bottom: 2rem;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.Sosiale-medier{
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+    
+    
     
 }
+.Sosiale-medier a{
+    text-decoration: none;
+    color:var(--clr-paleblue);
+    text-transform: uppercase;
+    margin: 0 10rem 0 10rem;
+}
+
+.kontakt-linker{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 90%;
+    padding: 2rem 10rem 2rem 10rem;
+}
+
+.Kontakt-oss{
+    flex:1;
+    text-align: left;
+    line-height:2px;
+    color: var(--clr-paleblue);
+    text-transform: uppercase;
+    margin-top: 4rem;
+}
+
+.Kontakt-oss :first-child{
+    font-weight: bold;
+    color: var(--clr-lightblue);
+}
+
+.Kontakt-oss :last-child{
+    font-weight: bold;
+    color:var(--clr-lightblue);
+}
+
+
+.Linker{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Linker a{
+    flex: 2;
+    text-align: right;
+    line-height:20px;
+    text-decoration: none;
+    color: var(--clr-paleblue);
+    text-transform: uppercase; 
+}
+/*Footer end*/
+
+
+
+
+  
+
+
+
