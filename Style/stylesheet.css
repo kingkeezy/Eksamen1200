@@ -16,19 +16,16 @@ body{
     font-family: "Scope One", serif;
 }
 
-#Slogan-tree{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    background-color: var(--clr-mediumblue);
-    text-transform: uppercase;
-    color:var(--clr-darkblue);
-}
 
 /*Footer start*/
 footer{
     background-color: var(--clr-darkblue);
     width: 100%;
+    position: fixed;
+    bottom: 0;
+
+
+    
 }
 #Fmain-overskrift{
     text-align: center;
