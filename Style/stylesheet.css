@@ -24,7 +24,7 @@ main{
     flex-direction: column;
 }
 
-/* Spørsmål section start */
+/* Dropdowns section Start */
 #vertical-text{
     text-align: center;
     position: fixed;
@@ -37,11 +37,8 @@ main{
     writing-mode: vertical-rl;
 }
 
-h3, h5{
-    color: var(--clr-darkblue);
-}
-
-section{
+/* Section for each dropdown*/
+.dropdowns{
     height: auto;
     flex-direction: row;
     width: 100%;
@@ -52,34 +49,20 @@ section{
     font-weight: lighter;
 }
 
-.opptakskrav-container, .hvordan-undervisningen-container, .hva-laerer-du-container, .studiets-oppbygning-container, .hva-koster-det-container, .hva-kan-du-jobbe-som-container, .utveksling-container, .videre-studiemuligheter-container, .statiske-metoder-info, .vitenskapelige-beregninger-info, .matematikk-fysikk-info{
-    height: auto;
-    width: 60%;
-    padding: 1rem 0 2rem 5rem;
-    display: none;
-    flex-direction: column;
-    background-color: var(--clr-paleblue);
+/* Styling for the plus and minus icons */
+.dropdowns svg{
+    fill: var(--clr-darkblue);
 }
 
-.opptakskrav-container .close-sidebar-button, .hvordan-undervisningen-container .close-sidebar-button, .hva-laerer-du-container .close-sidebar-button, .studiets-oppbygning-container .close-sidebar-button, .hva-koster-det-container .close-sidebar-button, .hva-kan-du-jobbe-som-container .close-sidebar-button, .utveksling-container .close-sidebar-button, .videre-studiemuligheter-container .close-sidebar-button, .statiske-metoder-info .close-sidebar-button, .vitenskapelige-beregninger-info .close-sidebar-button{
-    padding: 0;
-}
-
-section p, ul{
+/* Styling for p and ul elements inside a section */
+.dropdowns p, .dropdowns ul{
     padding: 0 0 10px 40px;
     color: var(--clr-mediumblue);
     line-height: 1.5rem;
     font-size: 1rem;
 }
 
-section svg{
-    fill: var(--clr-darkblue);
-}
-
-#sidebar-active, #sidebar-active2,#sidebar-active3,#sidebar-active4,#sidebar-active5, #sidebar-active6, #sidebar-active7, #sidebar-active8, #statiske-metoder, #vitenskapelige-beregninger, #matematikk-fysikk{
-    display: none;
-}
-
+/* Open and close buttons */
 .open-sidebar-button, .close-sidebar-button{
     padding: 1rem 0 2rem 5rem;
     display: flex;
@@ -91,22 +74,77 @@ section svg{
     text-transform: uppercase;
 }
 
-/* Ensure each .nested-dropdown displays independently */
+/* Information containers */
+.opptakskrav-container, 
+.hvordan-undervisningen-container, 
+.hva-laerer-du-container, 
+.studiets-oppbygning-container,
+.hva-koster-det-container, 
+.hva-kan-du-jobbe-som-container,
+.utveksling-container, 
+.videre-studiemuligheter-container, 
+.statiske-metoder-info, 
+.vitenskapelige-beregninger-info, 
+.matematikk-fysikk-info{
+    height: auto;
+    width: 60%;
+    padding: 1rem 0 2rem 5rem;
+    display: none;
+    background-color: var(--clr-paleblue);
+}
+
+/* Aligns the close and open button so that it looks like they are on top of each other */
+.opptakskrav-container .close-sidebar-button,
+.hvordan-undervisningen-container .close-sidebar-button,
+.hva-laerer-du-container .close-sidebar-button,
+.studiets-oppbygning-container .close-sidebar-button,
+.hva-koster-det-container .close-sidebar-button,
+.hva-kan-du-jobbe-som-container .close-sidebar-button,
+.utveksling-container .close-sidebar-button,
+.videre-studiemuligheter-container .close-sidebar-button,
+.statiske-metoder-info .close-sidebar-button,
+.vitenskapelige-beregninger-info .close-sidebar-button{
+    padding: 0;
+}
+
+/* Open information container when checkbox is checked */
+#checkbox-opptakskrav:checked ~ .opptakskrav-container,
+#hva-laerer-checkbox:checked ~ .hva-laerer-du-container, 
+#sidebar-active3:checked ~ .studiets-oppbygning-container, 
+#sidebar-active4:checked ~ .hvordan-undervisningen-container, 
+#sidebar-active5:checked ~ .hva-koster-det-container, 
+#sidebar-active6:checked ~ .hva-kan-du-jobbe-som-container, 
+#sidebar-active7:checked ~ .utveksling-container, 
+#sidebar-active8:checked ~ .videre-studiemuligheter-container, 
+#statiske-metoder:checked ~ .statiske-metoder-info, 
+#vitenskapelige-beregninger:checked ~ .vitenskapelige-beregninger-info, 
+#matematikk-fysikk:checked ~ .matematikk-fysikk-info{
+    display: block;
+}
+
+/* Removes the open button, so that it looks like it changes to the close button */
+#checkbox-opptakskrav:checked ~ .open-sidebar-button, 
+#hva-laerer-checkbox:checked ~ .open-sidebar-button, 
+#sidebar-active3:checked ~ .open-sidebar-button, 
+#sidebar-active4:checked ~ .open-sidebar-button, 
+#sidebar-active5:checked ~ .open-sidebar-button, 
+#sidebar-active6:checked ~ .open-sidebar-button, 
+#sidebar-active7:checked ~ .open-sidebar-button, 
+#sidebar-active8:checked ~ .open-sidebar-button, 
+#statiske-metoder:checked ~ .open-sidebar-button, 
+#vitenskapelige-beregninger:checked ~ .open-sidebar-button, 
+#matematikk-fysikk:checked ~ .open-sidebar-button{
+    display: none; 
+}
+
+
+/* Ensures each .nested-dropdown displays independently */
 .hva-laerer-du-container .nested-dropdown .statiske-metoder-info,
 .hva-laerer-du-container .nested-dropdown .vitenskapelige-beregninger-info,
 .hva-laerer-du-container .nested-dropdown .matematikk-fysikk-info {
     display: none;
 }
 
-
-/* Open Sidebar when Checkbox is Checked */
-#sidebar-active:checked ~ .opptakskrav-container, #sidebar-active2:checked ~ .hva-laerer-du-container, #sidebar-active3:checked ~ .studiets-oppbygning-container, #sidebar-active4:checked ~ .hvordan-undervisningen-container, #sidebar-active5:checked ~ .hva-koster-det-container, #sidebar-active6:checked ~ .hva-kan-du-jobbe-som-container, #sidebar-active7:checked ~ .utveksling-container, #sidebar-active8:checked ~ .videre-studiemuligheter-container, #statiske-metoder:checked ~ .statiske-metoder-info, #vitenskapelige-beregninger:checked ~ .vitenskapelige-beregninger-info, #matematikk-fysikk:checked ~ .matematikk-fysikk-info{
-    display: block;
-}
-
-#sidebar-active:checked ~ .open-sidebar-button, #sidebar-active2:checked ~ .open-sidebar-button, #sidebar-active3:checked ~ .open-sidebar-button, #sidebar-active4:checked ~ .open-sidebar-button, #sidebar-active5:checked ~ .open-sidebar-button, #sidebar-active6:checked ~ .open-sidebar-button, #sidebar-active7:checked ~ .open-sidebar-button, #sidebar-active8:checked ~ .open-sidebar-button, #statiske-metoder:checked ~ .open-sidebar-button, #vitenskapelige-beregninger:checked ~ .open-sidebar-button, #matematikk-fysikk:checked ~ .open-sidebar-button{
-    display: none; 
-}
 
 a{
     color: var(--clr-darkblue);

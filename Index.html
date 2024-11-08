@@ -13,636 +13,639 @@
 </head>
 
 <body>
-    <!-- Vertical tekst -->
-    <div id="vertical-text">
-        <h3>Spørsmål om utdanningen?</h3>
-        <p>Har du spørsmål om utdanningen, kontakt oss gjennom vårt kontaktskjema.</p>
-    </div>
-
-    <!-- OPPTAKSKRAV OG POENG -->
     <section>
-        <!-- Hidden Checkbox -->
-        <input type="checkbox" id="sidebar-active">
+        <!-- Vertical text -->
+        <div id="vertical-text">
+            <h3>Spørsmål om utdanningen?</h3>
+            <p>Har du spørsmål om utdanningen, kontakt oss gjennom vårt kontaktskjema.</p>
+        </div>
 
-        <!-- Open Information Button -->
-        <label for="sidebar-active" class="open-sidebar-button">
-            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000">
-                <path
-                    d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
-            </svg>
-            Opptakskrav og Poeng
-        </label>
+        <!-- OPPTAKSKRAV OG POENG -->
+        <section class="dropdowns">
+            <!-- Hidden Checkbox -->
+            <input type="checkbox" id="checkbox-opptakskrav" hidden>
 
-        <!-- Information Container -->
-        <div class="opptakskrav-container">
-            <!-- Close Information Button -->
-            <label for="sidebar-active" class="close-sidebar-button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
-                    fill="000000">
+            <!-- Open Information Button -->
+            <label for="checkbox-opptakskrav" class="open-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000">
                     <path
-                        d="M280-440h400v-80H280v80ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                        d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
                 </svg>
                 Opptakskrav og Poeng
             </label>
 
-            <!-- Information Content -->
-            <p>For å søke på dette programmet må du ha</p>
-            <ul>
-                <li><a href="https://www.samordnaopptak.no/info/opptak/opptak-uhg/">Generell studiekompetanse (samordnaopptak.no)</a> eller <a href="https://www.oslomet.no/studier/soknad-og-opptak/realkompetanse/realkompetanse-ingenior">oppfylle kravene til
-                        realkompetanse</a></li>
-                <li>Matematikk R1 og R2</li>
-                <li>Fysikk 1</li>
-            </ul>
-            <p>Det kan være konkurranse om plassene. Ved forrige opptak kom alle kvalifiserte søkere inn.</p>
-            <p>Hvis du mangler generell studiekompetanse eller enkelte fag fra videregående skole, kan du søke på dette
-                studiet om du har <a href="https://www.oslomet.no/studier/tkd/forkurs-ingenior">bestått ettårig forkurs for ingeniørutdanning</a>.</p>
-        </div>
-    </section>
+            <!-- Information Container -->
+            <div class="opptakskrav-container">
+                <!-- Close Information Button -->
+                <label for="checkbox-opptakskrav" class="close-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                        fill="000000">
+                        <path
+                            d="M280-440h400v-80H280v80ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                    </svg>
+                    Opptakskrav og Poeng
+                </label>
 
-    <!-- HVA LÆRER DU? -->
-    <section>
-        <!-- Hidden Checkbox -->
-        <input type="checkbox" id="sidebar-active2">
+                <!-- Information Content -->
+                <p>For å søke på dette programmet må du ha</p>
+                <ul>
+                    <li><a href="https://www.samordnaopptak.no/info/opptak/opptak-uhg/">Generell studiekompetanse (samordnaopptak.no)</a> eller <a href="https://www.oslomet.no/studier/soknad-og-opptak/realkompetanse/realkompetanse-ingenior">oppfylle kravene til
+                            realkompetanse</a></li>
+                    <li>Matematikk R1 og R2</li>
+                    <li>Fysikk 1</li>
+                </ul>
+                <p>Det kan være konkurranse om plassene. Ved forrige opptak kom alle kvalifiserte søkere inn.</p>
+                <p>Hvis du mangler generell studiekompetanse eller enkelte fag fra videregående skole, kan du søke på dette
+                    studiet om du har <a href="https://www.oslomet.no/studier/tkd/forkurs-ingenior">bestått ettårig forkurs for ingeniørutdanning</a>.</p>
+            </div>
+        </section>
 
-        <!-- Open Information Button -->
-        <label for="sidebar-active2" class="open-sidebar-button">
-            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000">
-                <path
-                    d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
-            </svg>
-            Hva lærer du?
-        </label>
+        <!-- HVA LÆRER DU? -->
+        <section class="dropdowns">
+            <!-- Hidden Checkbox -->
+            <input type="checkbox" id="hva-laerer-checkbox">
 
-        <!-- Information Container -->
-        <div class="hva-laerer-du-container">
-            <!-- Close Information Button -->
-            <label for="sidebar-active2" class="close-sidebar-button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
-                    fill="000000">
+            <!-- Open Information Button -->
+            <label for="hva-laerer-checkbox" class="open-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000">
                     <path
-                        d="M280-440h400v-80H280v80ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                        d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
                 </svg>
                 Hva lærer du?
             </label>
 
-            <!-- Information Content -->
-                <p>Bachelor i matematisk modellering og datavitenskap kobler sammen matematikk, informatikk, fysikk og
-                    statistikk. </p>
-                <p>Du får innsikt i matematiske modeller som brukes i praktisk problemløsning blant annet i medisinsk kjemi,
-                    biologiske prosesser og ulike samfunnssystemer. </p>
-                <p>Det første studieåret har du emner i blant annet matematikk, programmering, fysikk og kjemi for å få en
-                    felles forståelse av tematikken.</p>
-                <p>Det siste semesteret skriver du en bacheloroppgave tett knyttet til problemstillinger i arbeidslivet.</p>
-                <p>Første året velger du hvilken av disse spesialiseringene du vil ta.</p>
-
-        <div class="nested-dropdown">
-            <!-- Nested Checkbox for "Statistiske og datadrevne metoder" -->
-            <input type="checkbox" id="statiske-metoder">
-            <!-- Nested Toggle Button -->
-            <label for="statiske-metoder" class="open-sidebar-button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000">
-                    <path
-                        d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
-                </svg>
-                Statistiske og datadrevne metoder
-            </label>
-            <!-- Nested Dropdown Content -->
-            <div class="statiske-metoder-info">
-                <!-- Close Button for Nested Content -->
-                <label for="statiske-metoder" class="close-sidebar-button">
+            <!-- Information Container -->
+            <div class="hva-laerer-du-container">
+                <!-- Close Information Button -->
+                <label for="hva-laerer-checkbox" class="close-sidebar-button">
                     <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
-                    fill="000000">
-                    <path
-                        d="M280-440h400v-80H280v80ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
-                </svg>
+                        fill="000000">
+                        <path
+                            d="M280-440h400v-80H280v80ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                    </svg>
+                    Hva lærer du?
+                </label>
+
+                <!-- Information Content -->
+                    <p>Bachelor i matematisk modellering og datavitenskap kobler sammen matematikk, informatikk, fysikk og
+                        statistikk. </p>
+                    <p>Du får innsikt i matematiske modeller som brukes i praktisk problemløsning blant annet i medisinsk kjemi,
+                        biologiske prosesser og ulike samfunnssystemer. </p>
+                    <p>Det første studieåret har du emner i blant annet matematikk, programmering, fysikk og kjemi for å få en
+                        felles forståelse av tematikken.</p>
+                    <p>Det siste semesteret skriver du en bacheloroppgave tett knyttet til problemstillinger i arbeidslivet.</p>
+                    <p>Første året velger du hvilken av disse spesialiseringene du vil ta.</p>
+
+            <div class="nested-dropdown">
+                <!-- Nested Checkbox for "Statistiske og datadrevne metoder" -->
+                <input type="checkbox" id="statiske-metoder">
+                <!-- Nested Toggle Button -->
+                <label for="statiske-metoder" class="open-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000">
+                        <path
+                            d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                    </svg>
                     Statistiske og datadrevne metoder
-                </label>                
-                <p>Du lærer om hvordan du kan bruke målte data koblet med datadrevne og statistiske metoder til å gjøre beregninger, for eksempel av fremtidige strømpriser.</p>
-                <p>Du lærer hvordan du kan løse komplekse og sammensatte problemer, og utforske høydimensjonale datatyper. Moderne metoder innen maskinlæring og kunstig intelligens står sentralt.</p>
+                </label>
+                <!-- Nested Dropdown Content -->
+                <div class="statiske-metoder-info">
+                    <!-- Close Button for Nested Content -->
+                    <label for="statiske-metoder" class="close-sidebar-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                        fill="000000">
+                        <path
+                            d="M280-440h400v-80H280v80ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                    </svg>
+                        Statistiske og datadrevne metoder
+                    </label>                
+                    <p>Du lærer om hvordan du kan bruke målte data koblet med datadrevne og statistiske metoder til å gjøre beregninger, for eksempel av fremtidige strømpriser.</p>
+                    <p>Du lærer hvordan du kan løse komplekse og sammensatte problemer, og utforske høydimensjonale datatyper. Moderne metoder innen maskinlæring og kunstig intelligens står sentralt.</p>
+                </div>
             </div>
-        </div>
 
-        <div class="nested-dropdown">
-            <!-- Nested Checkbox for "Vitenskapelige beregninger" -->
-            <input type="checkbox" id="vitenskapelige-beregninger">
-            
-            <!-- Nested Toggle Button -->
-            <label for="vitenskapelige-beregninger" class="open-sidebar-button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000">
-                    <path
-                        d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
-                </svg>
-                vitenskapelige beregninger
-            </label>
-
-            <!-- Nested Dropdown Content -->
-            <div class="vitenskapelige-beregninger-info">
-                <!-- Close Button for Nested Content -->
-                <label for="vitenskapelige-beregninger" class="close-sidebar-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
-                    fill="000000">
-                    <path
-                        d="M280-440h400v-80H280v80ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
-                </svg>
+            <div class="nested-dropdown">
+                <!-- Nested Checkbox for "Vitenskapelige beregninger" -->
+                <input type="checkbox" id="vitenskapelige-beregninger">
+                
+                <!-- Nested Toggle Button -->
+                <label for="vitenskapelige-beregninger" class="open-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000">
+                        <path
+                            d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                    </svg>
                     vitenskapelige beregninger
                 </label>
-                <p>Du lærer å lage effektive algoritmer, datastrukturer og kildekoder for å løse matematiske og fysiske problemer med numeriske metoder.</p>
-                <p>Du lærer å utvikle kildekode og metodikk knyttet til medisinsk teknologi, biologiske prosesser og annet.</p>
-            </div>
-        </div>
 
-        <div class="nested-dropdown">
-            <!-- Nested Checkbox for "Matematikk og fysikk" -->
-            <input type="checkbox" id="matematikk-fysikk">
-            <!-- Nested Toggle Button -->
-            <label for="matematikk-fysikk" class="open-sidebar-button">
+                <!-- Nested Dropdown Content -->
+                <div class="vitenskapelige-beregninger-info">
+                    <!-- Close Button for Nested Content -->
+                    <label for="vitenskapelige-beregninger" class="close-sidebar-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                        fill="000000">
+                        <path
+                            d="M280-440h400v-80H280v80ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                    </svg>
+                        vitenskapelige beregninger
+                    </label>
+                    <p>Du lærer å lage effektive algoritmer, datastrukturer og kildekoder for å løse matematiske og fysiske problemer med numeriske metoder.</p>
+                    <p>Du lærer å utvikle kildekode og metodikk knyttet til medisinsk teknologi, biologiske prosesser og annet.</p>
+                </div>
+            </div>
+
+            <div class="nested-dropdown">
+                <!-- Nested Checkbox for "Matematikk og fysikk" -->
+                <input type="checkbox" id="matematikk-fysikk">
+                <!-- Nested Toggle Button -->
+                <label for="matematikk-fysikk" class="open-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000">
+                        <path
+                            d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                    </svg>
+                    Matematikk og fysikk
+                </label>
+
+                <!-- Nested Dropdown Content -->
+                <div class="matematikk-fysikk-info">
+                    <!-- Close Button for Nested Content -->
+                    <label for="matematikk-fysikk" class="close-sidebar-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                        fill="000000">
+                        <path
+                            d="M280-440h400v-80H280v80ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                    </svg>
+                        Matematikk og fysikk
+                    </label>
+                    
+                    <p>Du utforsker algebraiske strukturer, blant annet knyttet til dyp læring og kunstig intelligens</p>
+                    <p>Du lærer differensialgeometri på flater, gruppeteori og kodeteori; matematiske strukturer, representasjonsteori og kategoriteori.</p>
+                    <p>I fysikk lærer du om termodynamikk og statistisk fysikk.</p>
+                </div>
+            </div>
+                <p><a href="https://student.oslomet.no/studier/-/studieinfo/programplan/HINGMAMO/2024/H%C3%98ST">Se programplan på student.oslomet.no</a></p>
+            </div>
+        </section>
+
+        <!-- STUDIETS OPPBYGNING -->
+        <section class="dropdowns">
+            <!-- Hidden Checkbox -->
+            <input type="checkbox" id="sidebar-active3">
+
+            <!-- Open Information Button -->
+            <label for="sidebar-active3" class="open-sidebar-button">
                 <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000">
                     <path
                         d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
-                </svg>
-                Matematikk og fysikk
-            </label>
-
-            <!-- Nested Dropdown Content -->
-            <div class="matematikk-fysikk-info">
-                <!-- Close Button for Nested Content -->
-                <label for="matematikk-fysikk" class="close-sidebar-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
-                    fill="000000">
-                    <path
-                        d="M280-440h400v-80H280v80ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
-                </svg>
-                    Matematikk og fysikk
-                </label>
-                
-                <p>Du utforsker algebraiske strukturer, blant annet knyttet til dyp læring og kunstig intelligens</p>
-                <p>Du lærer differensialgeometri på flater, gruppeteori og kodeteori; matematiske strukturer, representasjonsteori og kategoriteori.</p>
-                <p>I fysikk lærer du om termodynamikk og statistisk fysikk.</p>
-            </div>
-        </div>
-            <p><a href="https://student.oslomet.no/studier/-/studieinfo/programplan/HINGMAMO/2024/H%C3%98ST">Se programplan på student.oslomet.no</a></p>
-        </div>
-    </section>
-
-    <!-- STUDIETS OPPBYGNING -->
-    <section>
-        <!-- Hidden Checkbox -->
-        <input type="checkbox" id="sidebar-active3">
-
-        <!-- Open Information Button -->
-        <label for="sidebar-active3" class="open-sidebar-button">
-            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000">
-                <path
-                    d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
-            </svg>
-            Studiets Oppbygning
-        </label>
-
-        <!-- Information Container -->
-        <div class="studiets-oppbygning-container">
-            <!-- Close Information Button -->
-            <label for="sidebar-active3" class="close-sidebar-button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
-                    fill="000000">
-                    <path
-                        d="M280-440h400v-80H280v80ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
                 </svg>
                 Studiets Oppbygning
             </label>
 
-            <!-- Information Content -->
-            <!-- 1.  studieår -->
-            <h1>1. studieår</h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Semester</th>
-                        <th>Fag</th>
-                        <th>Emnekode</th>
-                        <th>Studiepoeng</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1. Semester</td>
-                        <td>Discrete Mathematics</td>
-                        <td>DAPE1300</td>
-                        <td>10 stp.</td>
-                    </tr>
-                    <tr>
-                        <td>1. Semester</td>
-                        <td>Programming</td>
-                        <td>DAPE1400</td>
-                        <td>10 stp.</td>
-                    </tr>
-                    <tr>
-                        <td>1. Semester</td>
-                        <td>Technology and Society for Programmers</td>
-                        <td>DATA1100</td>
-                        <td>5 stp.</td>
-                    </tr>
-                    <tr>
-                        <td>1. Semester</td>
-                        <td>Introduction to Models and Calculations</td>
-                        <td>MAMO1100</td>
-                        <td>5 stp.</td>
-                    </tr>
-                    <tr>
-                        <td>2. Semester</td>
-                        <td>Mathematics 1000</td>
-                        <td>DAFE1000</td>
-                        <td>10 stp.</td>
-                    </tr>
-                    <tr>
-                        <td>2. Semester</td>
-                        <td>Physics and Chemistry</td>
-                        <td>DAPE2101</td>
-                        <td>10 stp.</td>
-                    </tr>
-                    <tr>
-                        <td>2. Semester</td>
-                        <td>Databases</td>
-                        <td>DATA1500</td>
-                        <td>10 stp.</td>
-                    </tr>
-                </tbody>
-            </table>
+            <!-- Information Container -->
+            <div class="studiets-oppbygning-container">
+                <!-- Close Information Button -->
+                <label for="sidebar-active3" class="close-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                        fill="000000">
+                        <path
+                            d="M280-440h400v-80H280v80ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                    </svg>
+                    Studiets Oppbygning
+                </label>
 
-            <!-- 2nd studieår -->
-            <h1>2. studieår</h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Semester</th>
-                        <th>Fag</th>
-                        <th>Emnekode</th>
-                        <th>Studiepoeng</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>3rd Semester</td>
-                        <td>Mathematics 2000 with Statistics</td>
-                        <td>DAPE2000</td>
-                        <td>10 stp.</td>
-                    </tr>
-                    <tr>
-                        <td>3rd Semester</td>
-                        <td>Modern Physics</td>
-                        <td>MAMO2100</td>
-                        <td>10 stp.</td>
-                    </tr>
-                    <tr>
-                        <td>4. Semester</td>
-                        <td>Mathematics 4000</td>
-                        <td>DAVE3705</td>
-                        <td>10 stp.</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h2>Matematikk og fysikk</h2>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3. Semester</td>
-                        <td>Linear Algebra and Introduction to Group Theory</td>
-                        <td>MAMO2300</td>
-                        <td>10 stp.</td>
-                    </tr>
-                    <tr>
-                        <td>4. Semester</td>
-                        <td>Thermodynamics and Statistical Physics</td>
-                        <td>MAMO2400</td>
-                        <td>10 stp.</td>
-                    </tr>
-                    <tr>
-                        <td>4. Semester</td>
-                        <td>Symmetries and Algebraic Structures</td>
-                        <td>MAMO2500</td>
-                        <td>10 stp.</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h2>Statistiske og datadrevne metoder</h2>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3. Semester</td>
-                        <td>Algorithms and Data Structures</td>
-                        <td>DATS2300</td>
-                        <td>10 stp.</td>
-                    </tr>
-                    <tr>
-                        <td>4. Semester</td>
-                        <td>Statistical Analysis</td>
-                        <td>MAMO3100</td>
-                        <td>10 stp.</td>
-                    </tr>
-                    <tr>
-                        <td>4. Semester</td>
-                        <td>Visualization</td>
-                        <td>ADSE3200</td>
-                        <td>10 stp.</td>
-                    </tr>
-                    <tr>
-                        <td>4. Semester</td>
-                        <td>Advanced Modeling and Calculations</td>
-                        <td>MAMO2200</td>
-                        <td>10 stp.</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h2>Vitenskapelige beregninger</h2>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3. Semester</td>
-                        <td>Algorithms and Data Structures</td>
-                        <td>DATS2300</td>
-                        <td>10 stp.</td>
-                    </tr>
-                    <tr>
-                        <td>4. Semester</td>
-                        <td>Ressurseffektive programmer</td>
-                        <td>MAMO3100</td>
-                        <td>10 stp.</td>
-                    </tr>
-                    <tr>
-                        <td>4. Semester</td>
-                        <td>Advanced Modeling and Calculations</td>
-                        <td>MAMO2200</td>
-                        <td>10 stp.</td>
-                    </tr>
-                </tbody>
-            </table>
+                <!-- Information Content -->
+                <!-- 1.  studieår -->
+                <h1>1. studieår</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Semester</th>
+                            <th>Fag</th>
+                            <th>Emnekode</th>
+                            <th>Studiepoeng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1. Semester</td>
+                            <td>Discrete Mathematics</td>
+                            <td>DAPE1300</td>
+                            <td>10 stp.</td>
+                        </tr>
+                        <tr>
+                            <td>1. Semester</td>
+                            <td>Programming</td>
+                            <td>DAPE1400</td>
+                            <td>10 stp.</td>
+                        </tr>
+                        <tr>
+                            <td>1. Semester</td>
+                            <td>Technology and Society for Programmers</td>
+                            <td>DATA1100</td>
+                            <td>5 stp.</td>
+                        </tr>
+                        <tr>
+                            <td>1. Semester</td>
+                            <td>Introduction to Models and Calculations</td>
+                            <td>MAMO1100</td>
+                            <td>5 stp.</td>
+                        </tr>
+                        <tr>
+                            <td>2. Semester</td>
+                            <td>Mathematics 1000</td>
+                            <td>DAFE1000</td>
+                            <td>10 stp.</td>
+                        </tr>
+                        <tr>
+                            <td>2. Semester</td>
+                            <td>Physics and Chemistry</td>
+                            <td>DAPE2101</td>
+                            <td>10 stp.</td>
+                        </tr>
+                        <tr>
+                            <td>2. Semester</td>
+                            <td>Databases</td>
+                            <td>DATA1500</td>
+                            <td>10 stp.</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-            <!-- 3rd studieår -->
-            <h1>3. studieår</h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Semester</th>
-                        <th>Fag</th>
-                        <th>Emnekode</th>
-                        <th>Studiepoeng</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>5. Semester</td>
-                        <td>Mathematics 3000</td>
-                        <td>DAVE3700</td>
-                        <td>10 stp.</td>
-                    </tr>
-                    <tr>
-                        <td>6. Semester</td>
-                        <td>Bachelor Thesis</td>
-                        <td>DATA3900</td>
-                        <td>20 stp.</td>
-                    </tr>
-                    <tr>
-                        <td colspan="4">
-                            <h2>Mathematics and Physics</h2>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>5. Semester</td>
-                        <td>Real Analysis</td>
-                        <td>MAMO3300</td>
-                        <td>10 stp.</td>
-                    </tr>
-                    <tr>
-                        <td>5. Semester</td>
-                        <td>Introduction to IT Research</td>
-                        <td>DATA3730</td>
-                        <td>10 stp.</td>
-                    </tr>
-                    <tr>
-                        <td colspan="4">
-                            <h2>Statistical and Data-driven Methods</h2>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>5. Semester</td>
-                        <td>Introduction to Artificial Intelligence</td>
-                        <td>DAVE3625</td>
-                        <td>10 stp.</td>
-                    </tr>
-                    <tr>
-                        <td>5. Semester</td>
-                        <td>Applied AI and Data Science Project</td>
-                        <td>DATA3750</td>
-                        <td>10 stp.</td>
-                    </tr>
-                    <tr>
-                        <td colspan="4">
-                            <h2>Scientific Computing</h2>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>5. Semester</td>
-                        <td>Data Security</td>
-                        <td>ITPE3100</td>
-                        <td>10 stp.</td>
-                    </tr>
-                    <tr>
-                        <td>6. Semester</td>
-                        <td>Visualization</td>
-                        <td>ADSE3200</td>
-                        <td>10 stp.</td>
-                    </tr>
-                    <tr>
-                        <td>6. Semester</td>
-                        <td>Testing of Software</td>
-                        <td>ADTS2310</td>
-                        <td>10 stp.</td>
-                    </tr>
-                    <tr>
-                        <td>6. Semester</td>
-                        <td>Network and Cloud Services</td>
-                        <td>DATA2410</td>
-                        <td>10 stp.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
+                <!-- 2nd studieår -->
+                <h1>2. studieår</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Semester</th>
+                            <th>Fag</th>
+                            <th>Emnekode</th>
+                            <th>Studiepoeng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>3rd Semester</td>
+                            <td>Mathematics 2000 with Statistics</td>
+                            <td>DAPE2000</td>
+                            <td>10 stp.</td>
+                        </tr>
+                        <tr>
+                            <td>3rd Semester</td>
+                            <td>Modern Physics</td>
+                            <td>MAMO2100</td>
+                            <td>10 stp.</td>
+                        </tr>
+                        <tr>
+                            <td>4. Semester</td>
+                            <td>Mathematics 4000</td>
+                            <td>DAVE3705</td>
+                            <td>10 stp.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2>Matematikk og fysikk</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3. Semester</td>
+                            <td>Linear Algebra and Introduction to Group Theory</td>
+                            <td>MAMO2300</td>
+                            <td>10 stp.</td>
+                        </tr>
+                        <tr>
+                            <td>4. Semester</td>
+                            <td>Thermodynamics and Statistical Physics</td>
+                            <td>MAMO2400</td>
+                            <td>10 stp.</td>
+                        </tr>
+                        <tr>
+                            <td>4. Semester</td>
+                            <td>Symmetries and Algebraic Structures</td>
+                            <td>MAMO2500</td>
+                            <td>10 stp.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2>Statistiske og datadrevne metoder</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3. Semester</td>
+                            <td>Algorithms and Data Structures</td>
+                            <td>DATS2300</td>
+                            <td>10 stp.</td>
+                        </tr>
+                        <tr>
+                            <td>4. Semester</td>
+                            <td>Statistical Analysis</td>
+                            <td>MAMO3100</td>
+                            <td>10 stp.</td>
+                        </tr>
+                        <tr>
+                            <td>4. Semester</td>
+                            <td>Visualization</td>
+                            <td>ADSE3200</td>
+                            <td>10 stp.</td>
+                        </tr>
+                        <tr>
+                            <td>4. Semester</td>
+                            <td>Advanced Modeling and Calculations</td>
+                            <td>MAMO2200</td>
+                            <td>10 stp.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2>Vitenskapelige beregninger</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3. Semester</td>
+                            <td>Algorithms and Data Structures</td>
+                            <td>DATS2300</td>
+                            <td>10 stp.</td>
+                        </tr>
+                        <tr>
+                            <td>4. Semester</td>
+                            <td>Ressurseffektive programmer</td>
+                            <td>MAMO3100</td>
+                            <td>10 stp.</td>
+                        </tr>
+                        <tr>
+                            <td>4. Semester</td>
+                            <td>Advanced Modeling and Calculations</td>
+                            <td>MAMO2200</td>
+                            <td>10 stp.</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-    <section>
-        <!-- Hidden Checkbox -->
-        <input type="checkbox" id="sidebar-active4">
+                <!-- 3rd studieår -->
+                <h1>3. studieår</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Semester</th>
+                            <th>Fag</th>
+                            <th>Emnekode</th>
+                            <th>Studiepoeng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>5. Semester</td>
+                            <td>Mathematics 3000</td>
+                            <td>DAVE3700</td>
+                            <td>10 stp.</td>
+                        </tr>
+                        <tr>
+                            <td>6. Semester</td>
+                            <td>Bachelor Thesis</td>
+                            <td>DATA3900</td>
+                            <td>20 stp.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <h2>Mathematics and Physics</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5. Semester</td>
+                            <td>Real Analysis</td>
+                            <td>MAMO3300</td>
+                            <td>10 stp.</td>
+                        </tr>
+                        <tr>
+                            <td>5. Semester</td>
+                            <td>Introduction to IT Research</td>
+                            <td>DATA3730</td>
+                            <td>10 stp.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <h2>Statistical and Data-driven Methods</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5. Semester</td>
+                            <td>Introduction to Artificial Intelligence</td>
+                            <td>DAVE3625</td>
+                            <td>10 stp.</td>
+                        </tr>
+                        <tr>
+                            <td>5. Semester</td>
+                            <td>Applied AI and Data Science Project</td>
+                            <td>DATA3750</td>
+                            <td>10 stp.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <h2>Scientific Computing</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5. Semester</td>
+                            <td>Data Security</td>
+                            <td>ITPE3100</td>
+                            <td>10 stp.</td>
+                        </tr>
+                        <tr>
+                            <td>6. Semester</td>
+                            <td>Visualization</td>
+                            <td>ADSE3200</td>
+                            <td>10 stp.</td>
+                        </tr>
+                        <tr>
+                            <td>6. Semester</td>
+                            <td>Testing of Software</td>
+                            <td>ADTS2310</td>
+                            <td>10 stp.</td>
+                        </tr>
+                        <tr>
+                            <td>6. Semester</td>
+                            <td>Network and Cloud Services</td>
+                            <td>DATA2410</td>
+                            <td>10 stp.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-        <!-- Open Information Button -->
-        <label for="sidebar-active4" class="open-sidebar-button">
-            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000">
-                <path
-                    d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
-            </svg>
-            Hvordan foregår undervisningen?
-        </label>
+        <!-- HVORDAN FOREGÅR UNDERVISNINGEN? -->
+        <section class="dropdowns">
+            <!-- Hidden Checkbox -->
+            <input type="checkbox" id="sidebar-active4">
 
-        <!-- Information Container -->
-        <div class="hvordan-undervisningen-container">
-            <!-- Close Information Button -->
-            <label for="sidebar-active4" class="close-sidebar-button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
-                    fill="000000">
+            <!-- Open Information Button -->
+            <label for="sidebar-active4" class="open-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000">
                     <path
-                        d="M280-440h400v-80H280v80ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                        d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
                 </svg>
                 Hvordan foregår undervisningen?
             </label>
 
-            <!-- Information Content -->
-            <p>Undervisningen er en kombinasjon av</p>
-            <ul>
-                <li>prosjektarbeid</li>
-                <li>workshop</li>
-                <li>presentasjoner</li>
-                <li>veiledninger</li>
-                <li>diskusjoner og refleksjoner</li>
-                <li>forelesninger</li>
-                <li>selvstudie</li>
-                <li>gruppearbeid</li>
-                <li>arbeidslivsrelevant bacheloroppgave</li>
-            </ul>
-            <p>For å gjennomføre studiet på normert tid, må du regne med å bruke om lag 40 timer per uke på
-                studierelatert arbeid gjennom hele semestret.</p>
-        </div>
-    </section>
+            <!-- Information Container -->
+            <div class="hvordan-undervisningen-container">
+                <!-- Close Information Button -->
+                <label for="sidebar-active4" class="close-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                        fill="000000">
+                        <path
+                            d="M280-440h400v-80H280v80ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                    </svg>
+                    Hvordan foregår undervisningen?
+                </label>
 
-    <!-- HVA KOSTER DET? -->
-    <section>
-        <!-- Hidden Checkbox -->
-        <input type="checkbox" id="sidebar-active5">
+                <!-- Information Content -->
+                <p>Undervisningen er en kombinasjon av</p>
+                <ul>
+                    <li>prosjektarbeid</li>
+                    <li>workshop</li>
+                    <li>presentasjoner</li>
+                    <li>veiledninger</li>
+                    <li>diskusjoner og refleksjoner</li>
+                    <li>forelesninger</li>
+                    <li>selvstudie</li>
+                    <li>gruppearbeid</li>
+                    <li>arbeidslivsrelevant bacheloroppgave</li>
+                </ul>
+                <p>For å gjennomføre studiet på normert tid, må du regne med å bruke om lag 40 timer per uke på
+                    studierelatert arbeid gjennom hele semestret.</p>
+            </div>
+        </section>
 
-        <!-- Open Information Button -->
-        <label for="sidebar-active5" class="open-sidebar-button">
-            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000">
-                <path
-                    d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
-            </svg>
-            Hva koster det?
-        </label>
+        <!-- HVA KOSTER DET? -->
+        <section class="dropdowns">
+            <!-- Hidden Checkbox -->
+            <input type="checkbox" id="sidebar-active5">
 
-        <!-- Information Container -->
-        <div class="hva-koster-det-container">
-            <!-- Close Information Button -->
-            <label for="sidebar-active5" class="close-sidebar-button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
-                    fill="000000">
+            <!-- Open Information Button -->
+            <label for="sidebar-active5" class="open-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000">
                     <path
-                        d="M280-440h400v-80H280v80ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                        d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
                 </svg>
                 Hva koster det?
             </label>
 
-            <!-- Information Content -->
-            <p><a href="https://student.oslomet.no/semesteravgift">Du betaler en semesteravgift hvert semester (student.oslomet.no).</a></p>
-            <p><a href="https://student.oslomet.no/studieavgift-for-internasjonale-studenter-utenfor-eu-eos">Er du internasjonal student fra utenfor EU og EØS, må du betale studieavgift (student.oslomet.no)</a>. Det er mulig å søke om unntak for betaling av denne studieavgiften.</p>
-        </div>
-    </section>
+            <!-- Information Container -->
+            <div class="hva-koster-det-container">
+                <!-- Close Information Button -->
+                <label for="sidebar-active5" class="close-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                        fill="000000">
+                        <path
+                            d="M280-440h400v-80H280v80ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                    </svg>
+                    Hva koster det?
+                </label>
 
-    <!-- HVA KAN DU JOBBE SOM? -->
-    <section>
-        <!-- Hidden Checkbox -->
-        <input type="checkbox" id="sidebar-active6">
+                <!-- Information Content -->
+                <p><a href="https://student.oslomet.no/semesteravgift">Du betaler en semesteravgift hvert semester (student.oslomet.no).</a></p>
+                <p><a href="https://student.oslomet.no/studieavgift-for-internasjonale-studenter-utenfor-eu-eos">Er du internasjonal student fra utenfor EU og EØS, må du betale studieavgift (student.oslomet.no)</a>. Det er mulig å søke om unntak for betaling av denne studieavgiften.</p>
+            </div>
+        </section>
 
-        <!-- Open Information Button -->
-        <label for="sidebar-active6" class="open-sidebar-button">
-            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000">
-                <path
-                    d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
-            </svg>
-            Hva kan du jobbe som?
-        </label>
+        <!-- HVA KAN DU JOBBE SOM? -->
+        <section class="dropdowns">
+            <!-- Hidden Checkbox -->
+            <input type="checkbox" id="sidebar-active6">
 
-        <!-- Information Container -->
-        <div class="hva-kan-du-jobbe-som-container">
-            <!-- Close Information Button -->
-            <label for="sidebar-active6" class="close-sidebar-button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
-                    fill="000000">
+            <!-- Open Information Button -->
+            <label for="sidebar-active6" class="open-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000">
                     <path
-                        d="M280-440h400v-80H280v80ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                        d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
                 </svg>
                 Hva kan du jobbe som?
             </label>
 
-            <!-- Information Content -->
-            <p>Med dette studiet får du IT-kompetanse som er etterspurt i arbeidslivet, særlig om du velger spesialiseringene vitenskapelige beregninger eller statistiske og datadrevne metoder.</p>
-            <p>Spesialiseringen i matematikk og fysikk retter seg mer mot videre studier, men også her får du etterspurt kompetanse i arbeidslivet etter bachelorstudiet.</p>
-            <p>Matematisk modellering og datavitenskap blir stadig viktigere som basisgrunnlag, i for eksempel beregninger knyttet til klima, forsikring og finans, og datadrevne metoder for verdiskaping.</p>
-            <p>Datadrevne metoder og maskinlæring er i dag svært mye brukt i arbeidslivet. </p>
-        </div>
-    </section>
+            <!-- Information Container -->
+            <div class="hva-kan-du-jobbe-som-container">
+                <!-- Close Information Button -->
+                <label for="sidebar-active6" class="close-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                        fill="000000">
+                        <path
+                            d="M280-440h400v-80H280v80ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                    </svg>
+                    Hva kan du jobbe som?
+                </label>
 
-    <!-- UTVEKSLING -->
-    <section>
-        <!-- Hidden Checkbox -->
-        <input type="checkbox" id="sidebar-active7">
+                <!-- Information Content -->
+                <p>Med dette studiet får du IT-kompetanse som er etterspurt i arbeidslivet, særlig om du velger spesialiseringene vitenskapelige beregninger eller statistiske og datadrevne metoder.</p>
+                <p>Spesialiseringen i matematikk og fysikk retter seg mer mot videre studier, men også her får du etterspurt kompetanse i arbeidslivet etter bachelorstudiet.</p>
+                <p>Matematisk modellering og datavitenskap blir stadig viktigere som basisgrunnlag, i for eksempel beregninger knyttet til klima, forsikring og finans, og datadrevne metoder for verdiskaping.</p>
+                <p>Datadrevne metoder og maskinlæring er i dag svært mye brukt i arbeidslivet. </p>
+            </div>
+        </section>
 
-        <!-- Open Information Button -->
-        <label for="sidebar-active7" class="open-sidebar-button">
-            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000">
-                <path
-                    d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
-            </svg>
-            Utveksling
-        </label>
+        <!-- UTVEKSLING -->
+        <section class="dropdowns">
+            <!-- Hidden Checkbox -->
+            <input type="checkbox" id="sidebar-active7">
 
-        <!-- Information Container -->
-        <div class="utveksling-container">
-            <!-- Close Information Button -->
-            <label for="sidebar-active7" class="close-sidebar-button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
-                    fill="000000">
+            <!-- Open Information Button -->
+            <label for="sidebar-active7" class="open-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000">
                     <path
-                        d="M280-440h400v-80H280v80ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                        d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
                 </svg>
                 Utveksling
             </label>
 
-            <!-- Information Content -->
-            <p>Du kan dra på utveksling i femte semester.</p>
-        </div>
-    </section>
+            <!-- Information Container -->
+            <div class="utveksling-container">
+                <!-- Close Information Button -->
+                <label for="sidebar-active7" class="close-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                        fill="000000">
+                        <path
+                            d="M280-440h400v-80H280v80ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                    </svg>
+                    Utveksling
+                </label>
 
-    <!-- VIDERE STUDIEMULIGHETER VED OSLOMET -->
-    <section>
-        <!-- Hidden Checkbox -->
-        <input type="checkbox" id="sidebar-active8">
+                <!-- Information Content -->
+                <p>Du kan dra på utveksling i femte semester.</p>
+            </div>
+        </section>
 
-        <!-- Open Information Button -->
-        <label for="sidebar-active8" class="open-sidebar-button">
-            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000">
-                <path
-                    d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
-            </svg>
-            Videre studiemuligheter ved OsloMet
-        </label>
+        <!-- VIDERE STUDIEMULIGHETER VED OSLOMET -->
+        <section class="dropdowns">
+            <!-- Hidden Checkbox -->
+            <input type="checkbox" id="sidebar-active8">
 
-        <!-- Information Container -->
-        <div class="videre-studiemuligheter-container">
-            <!-- Close Information Button -->
-            <label for="sidebar-active8" class="close-sidebar-button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
-                    fill="000000">
+            <!-- Open Information Button -->
+            <label for="sidebar-active8" class="open-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000">
                     <path
-                        d="M280-440h400v-80H280v80ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                        d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
                 </svg>
                 Videre studiemuligheter ved OsloMet
             </label>
 
-            <!-- Information Content -->
-             <div id="videre-studiemuligheter-info">
-                <a href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi">     
-                    <h5>Anvendt data- og informasjonsteknologi (ACIT)</h5>
-                    <p>Masterprogram | 2 år | Pilestredet i Oslo | Heltid</p>
-                </a>
+            <!-- Information Container -->
+            <div class="videre-studiemuligheter-container">
+                <!-- Close Information Button -->
+                <label for="sidebar-active8" class="close-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                        fill="000000">
+                        <path
+                            d="M280-440h400v-80H280v80ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                    </svg>
+                    Videre studiemuligheter ved OsloMet
+                </label>
+
+                <!-- Information Content -->
+                <div id="videre-studiemuligheter-info">
+                    <a href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi">     
+                        <h5>Anvendt data- og informasjonsteknologi (ACIT)</h5>
+                        <p>Masterprogram | 2 år | Pilestredet i Oslo | Heltid</p>
+                    </a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+</section>
 </body>
 
 </html>
