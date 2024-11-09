@@ -23,29 +23,6 @@ footer{
     width: 100%;
     position: fixed;
     bottom: 0;
-
-
-    
-}
-#Fmain-overskrift{
-    text-align: center;
-    position: relative;
-    color: var(--clr-lightblue);
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 50px;
-
-
-}
-
-#Fmain-overskrift:after{
-    content: "";
-    position: absolute;
-    left: 15%;
-    right: 15%;
-    bottom:0;
-    height: 2px;
-    background:var(--clr-grayblue);
 }
 
 .Overskrift-container{
@@ -57,17 +34,38 @@ footer{
     max-width: 80%;
 }
 
+#Fmain-overskrift{
+    text-align: center;
+    position: relative;
+    color: var(--clr-lightblue);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+/* The line underneath Fmain-overskrift */
+#Fmain-overskrift:after{
+    content: "";
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    bottom:0;
+    height: 2px;
+    background:var(--clr-grayblue);
+}
+
+/* Abonner "button" */
 #Abonner{
-    border-radius: 40px;
+    border-radius: 3rem;
     border: 5px solid var(--clr-paleblue);
-    padding: 10px;
+    padding: 1rem;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--clr-paleblue);
     font-size: 700;
     align-self: center;
     margin-bottom: 2rem;
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -75,10 +73,8 @@ footer{
     width: 100%;
     text-align: center;
     justify-content: space-between;
-    
-    
-    
 }
+
 .Sosiale-medier a{
     text-decoration: none;
     color:var(--clr-paleblue);
@@ -95,9 +91,9 @@ footer{
 }
 
 .Kontakt-oss{
-    flex:1;
+    flex: 1;
     text-align: left;
-    line-height:2px;
+    line-height: 2px;
     color: var(--clr-paleblue);
     text-transform: uppercase;
     margin-top: 4rem;
@@ -113,7 +109,6 @@ footer{
     color:var(--clr-lightblue);
 }
 
-
 .Linker{
     display: flex;
     flex-direction: column;
@@ -123,7 +118,6 @@ footer{
 .Linker a{
     flex: 2;
     text-align: right;
-    line-height:20px;
     text-decoration: none;
     color: var(--clr-paleblue);
     text-transform: uppercase; 
