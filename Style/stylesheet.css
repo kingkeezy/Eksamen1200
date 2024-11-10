@@ -542,6 +542,51 @@ h1 a{
 }
 /* Studenthistorier End */
 
+/* Andre studiemuligheter start */
+#studier {
+   align-items: center;
+   background-color: var(--clr-mediumblue);
+   color: var(--clr-paleblue);
+}
+
+#studier h1{
+   margin: 0;
+   padding: 4rem;
+   text-transform: uppercase;
+   text-align: center;
+   margin-bottom: 20px;
+   font-size: 1.8rem;
+}
+
+.programs{
+   display: flex;
+   flex-direction: row;
+   flex: 1 1 0;
+   text-align: center;
+   line-height: 0.3rem;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding: 4rem;
+   gap: calc(15% - 3rem);
+   row-gap: 4rem;
+}
+
+.programs a{
+   text-decoration: none;
+   color: inherit;
+   width: auto;
+   height: auto;
+   background-color: var(--clr-darkblue);
+   border-radius: 5rem;
+   padding: 0 4rem 0 4rem;
+   color: whitesmoke;
+}
+
+.programs p{
+   font-weight: lighter;
+}
+/* Andre studiemuligheter start */
+
 /* Content Divider (Studiested) Start */
 #content-divider-studiested{
     width: 100%;
@@ -678,11 +723,4 @@ footer{
     text-decoration-thickness: 2px;
 }
 /*Footer end*/
-
-
-
-
-  
-
-
 
