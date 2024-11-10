@@ -378,7 +378,6 @@ table td:last-child {
 #faglig-leder {
     background-color: var(--clr-grayblue);
     padding: 0 4rem 2rem 4rem;
-    width: 100%;
     color: var(--clr-darkblue);   
 }
 
@@ -461,7 +460,8 @@ h1 a, #studenthistorier h1{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 4rem;
 }
 
 .card {
@@ -525,9 +525,6 @@ h1 a, #studenthistorier h1{
 /*Footer start*/
 footer{
     background-color: var(--clr-darkblue);
-    width: 100%;
-    position: fixed;
-    bottom: 0;
 }
 
 .Overskrift-container{
@@ -546,6 +543,7 @@ footer{
     text-transform: uppercase;
     font-weight: bold;
     font-size: 3rem;
+    padding: 2rem;
 }
 
 /* The line underneath Fmain-overskrift */
