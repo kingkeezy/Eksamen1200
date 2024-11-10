@@ -1,3 +1,16 @@
+/* CONTENTS LIST
+- Family and roots
+- Media Queries
+- Navbar
+- Header
+- Content Divider (Innsikt i matematiske modeller)
+- Dropdowns Information
+- Content Divider (Faglig Leder)
+- Andre studiemuligheter
+- Studenthistorier
+- Content Divider (Studiested)
+- Footer */
+
 /* Import font */
 @font-face {
     font-family: 'Agrandir';
@@ -11,6 +24,22 @@
     --clr-lightblue: #90E0EF;
     --clr-paleblue: #CAF0F8;
     --clr-grayblue: #CFE6FF;
+}
+
+/* https://www.youtube.com/watch?v=K24lUqcT0Ms, for the media queries */
+/* Wide Screen (21:9 - 2560 x 1080)  */
+@media (max-width: 2560px) {
+
+}
+
+/* Regular Screen (16:9 - 1920 x 1080) */
+@media (max-width: 1920px) {
+
+}
+
+/* Portrait Screen - Iphone 14 Pro Max (430 x 932) */
+@media (max-width: 430px) {
+
 }
 
 body {
@@ -219,7 +248,7 @@ header hr {
 }
 /* Content divider (Innsikt) End */
 
-/* Dropdowns section Start */
+/* Dropdown Information section Start */
 #dropdowns-container{
     position: relative;
 }
@@ -380,7 +409,7 @@ table h2 {
 table td:last-child {
     text-align: right;
 }
-/* Dropdown section end */
+/* Dropdown Information section end */
 
 /* Content divider (Faglig Leder) Start */
 #faglig-leder {
