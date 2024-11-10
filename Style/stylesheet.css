@@ -521,3 +521,118 @@ h1 a, #studenthistorier h1{
     font-weight: lighter;
 }
 /* Content Divider (studiested) Slutt */
+
+/*Footer start*/
+footer{
+    background-color: var(--clr-darkblue);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.Overskrift-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 10rem 2rem 10rem;
+    max-width: 80%;
+}
+
+#Fmain-overskrift{
+    text-align: center;
+    position: relative;
+    color: var(--clr-lightblue);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+/* The line underneath Fmain-overskrift */
+#Fmain-overskrift:after{
+    content: "";
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    bottom:0;
+    height: 2px;
+    background:var(--clr-grayblue);
+}
+
+/* Abonner "button" */
+#Abonner{
+    border-radius: 3rem;
+    border: 5px solid var(--clr-paleblue);
+    padding: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--clr-paleblue);
+    font-size: 700;
+    align-self: center;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.Sosiale-medier{
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.Sosiale-medier a{
+    text-decoration: none;
+    color:var(--clr-paleblue);
+    text-transform: uppercase;
+    margin: 0 10rem 0 10rem;
+}
+
+.kontakt-linker{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 90%;
+    padding: 2rem 10rem 2rem 10rem;
+}
+
+.Kontakt-oss{
+    flex: 1;
+    text-align: left;
+    line-height: 2px;
+    color: var(--clr-paleblue);
+    text-transform: uppercase;
+    margin-top: 4rem;
+}
+
+.Kontakt-oss :first-child{
+    font-weight: bold;
+    color: var(--clr-lightblue);
+}
+
+.Kontakt-oss :last-child{
+    font-weight: bold;
+    color:var(--clr-lightblue);
+}
+
+.Linker{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Linker a{
+    flex: 2;
+    text-align: right;
+    text-decoration: none;
+    color: var(--clr-paleblue);
+    text-transform: uppercase; 
+}
+/*Footer end*/
+
+
+
+
+  
+
+
+
