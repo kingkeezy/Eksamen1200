@@ -28,18 +28,26 @@
 
 /* https://www.youtube.com/watch?v=K24lUqcT0Ms, for the media queries */
 /* Wide Screen (21:9 - 2560 x 1080)  */
-@media (max-width: 2560px) {
-
-}
-
-/* Regular Screen (16:9 - 1920 x 1080) */
-@media (max-width: 1920px) {
-
+@media (min-width: 2046px) {
+    .programs{
+        font-size: x-large;
+    }
+    html{
+        font-size: x-large;
+    }
 }
 
 /* Portrait Screen - Iphone 14 Pro Max (430 x 932) */
-@media (max-width: 430px) {
+@media (max-width: 1151px) {
+    html{
+        font-size: x-small;
+    }
+}
 
+@media (max-width: 429px) {
+    html{
+        font-size: xx-small;
+    }
 }
 
 body {
