@@ -129,6 +129,7 @@ nav ul a{
     align-items: center;
     cursor: pointer;
     padding: 0.5rem 1rem;
+    font-weight: bold;
 }
 
 .menu-toggle-label i {
