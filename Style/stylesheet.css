@@ -129,7 +129,6 @@ nav ul a{
     align-items: center;
     cursor: pointer;
     padding: 0.5rem 1rem;
-    font-weight: bold;
 }
 
 .menu-toggle-label i {
@@ -189,7 +188,7 @@ header h1 {
     margin: 0;
 }
 
-header h2 {
+header h1 p {
     font-size: 2rem;
     margin-top: 0;
     font-weight: 100;
