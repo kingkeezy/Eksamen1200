@@ -83,26 +83,48 @@ nav ul {
     display: flex;
     flex-direction: row;
     margin-right: 2rem;
+    align-items: center;
+    gap: 1rem;
 }
 
 nav ul li {
     position: relative;
 }
 
-nav ul a {
-    color: white;
+nav ul a{
+    color: var(--clr-darkblue);
     text-decoration: none;
     display: flex;
-    align-items: center;
     padding: 0.5rem 1rem;
 }
 
-nav ul a i {
-    margin-left: 0.5rem;
+#search-bar{
+    height: 20px;
+    display: flex;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    border-radius: 50px;
+    background-color: var(--clr-paleblue);
+}
+
+#search-bar input{
+    width: 0;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: var(--clr-darkblue);
+    font-weight: bold;
+}
+
+#search-bar:hover input{
+    width:auto;
 }
 
 .menu-toggle-label {
-    color: white;
+    color: var(--clr-paleblue);
+    height: 20px;
+    border-radius: 50px;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -127,7 +149,8 @@ nav ul a i {
     border-radius: 4px;
     padding: 10px;
     list-style-type: none;
-    margin: 0;
+    margin-right: 1rem;
+    margin-top: 10px;
     z-index: 1;
 }
 
