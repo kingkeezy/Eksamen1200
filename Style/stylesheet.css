@@ -128,8 +128,7 @@ nav ul a{
     display: flex;
     align-items: center;
     cursor: pointer;
-    padding: 0.5rem 1rem;
-    font-weight: bold;
+    padding: 0.5rem 1rem; 
 }
 
 .menu-toggle-label i {
@@ -153,6 +152,10 @@ nav ul a{
     margin-right: 1rem;
     margin-top: 10px;
     z-index: 1;
+}
+
+.menu-toggle-label p{
+    font-weight: bold;
 }
 
 .dropdown-menu li {
@@ -184,12 +187,14 @@ header {
     text-align: center;
 }
 
+
+
 header h1 {
     font-size: 4rem;
     margin: 0;
 }
 
-header h2 {
+header h2{
     font-size: 2rem;
     margin-top: 0;
     font-weight: 100;
@@ -199,7 +204,7 @@ header h2 {
 
 
 header h1 span {
-    color:  var(--clr-paleblue);;
+    color:  var(--clr-lightblue);;
 }
 
 header hr {
@@ -590,6 +595,10 @@ h1 a{
    font-size: 1.8rem;
 }
 
+#studier h2{
+    font-size: 1.17em;
+}
+
 .programs{
    display: flex;
    flex-direction: row;
@@ -624,6 +633,8 @@ h1 a{
 .programs p{
    font-weight: lighter;
 }
+
+
 /* Andre studiemuligheter start */
 
 /* Content Divider (Studiested) Start */
@@ -632,15 +643,15 @@ h1 a{
     text-align: center;
     text-transform: uppercase;
     background-color: var(--clr-mediumblue);
-    color: var(--clr-darkblue);
+    color: var(--clr-lightblue);
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.4rem;
     line-height: 0.8rem;
 }
 
 #content-divider-studiested a{
     text-decoration: none;
-    color: var(--clr-darkblue);
+    color: var(--clr-lightblue);
 }
 
 #content-divider-studiested a:hover{
