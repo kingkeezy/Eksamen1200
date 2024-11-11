@@ -198,7 +198,7 @@ header h1 p {
 
 
 header h1 span {
-    color: var(--clr-darkblue);
+    color:  var(--clr-paleblue);;
 }
 
 header hr {
