@@ -106,6 +106,7 @@ nav ul a{
     align-items: center;
     border-radius: 50px;
     background-color: var(--clr-paleblue);
+    color: var(--clr-darkblue);
 }
 
 #search-bar input{
@@ -414,9 +415,10 @@ header hr {
     text-decoration-line: underline;
 }
 
-#videre-studiemuligheter-info h5, #videre-studiemulighter-info p{
+#videre-studiemuligheter-info h3, #videre-studiemulighter-info p{
     padding-left: 40px;
     margin-bottom: 0;
+    font-size: 1.5rem;
 }
 
 #videre-studiemuligheter-info p{
