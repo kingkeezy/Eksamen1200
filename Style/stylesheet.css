@@ -774,3 +774,25 @@ footer{
 }
 /*Footer end*/
 
+/*Accessibility*/
+
+.a-header{
+   text-transform: uppercase;
+}
+.a-main{
+    
+    background-color: var(--clr-lightblue);
+    
+}
+.a-main h1{
+    text-transform: uppercase;
+    color: var(--clr-darkblue);
+    font-weight: bolder;
+}
+.a-main p{
+    color:var(--clr-mediumblue)
+}
+.a-main section{
+    
+}
+
