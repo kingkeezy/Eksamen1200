@@ -13,27 +13,30 @@
     <link rel="stylesheet" href="/Style/stylesheet.css">
 </head>
 
-<body> 
-    <nav class="container">
+<body id="accessibility-bcolor"> 
+    <nav>
         <!-- Logo -->
         <img src="/Media/OsloMetRe-design.png" alt="Oslomet Logo" width="100" height="100">
         <!-- Navigation Links -->
         <ul>
-            <li>
-                <a href="#">
-                    <p>Søk</p>
+            <!-- Search Button -->
+            <li id="search-bar">
+                <form action="#">
+                    <input type="text" placeholder="Søk...">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                </a>
+                </form>
             </li>
+
+            <!-- Menu Button -->
             <li>
                 <!-- Hidden checkbox for toggling the dropdown -->
                 <input type="checkbox" id="menu-toggle" hidden>
                 <!-- Label for checkbox toggle, containing the "Meny" link -->
                 <label for="menu-toggle" class="menu-toggle-label">
-                    <p>Meny</p>
+                    <h2>Meny</h2>
                     <i class="fa-solid fa-bars"></i>
                 </label>
-                <!-- Dropdown menu -->
+                <!-- Dropdown menu that is hidden until menu-toggle is checked -->
                 <ul class="dropdown-menu">
                     <li><a href="/">Hjem</a></li>
                     <li><a href="Sub-pages/Accessibility.html">Accessibility</a></li>
@@ -50,77 +53,48 @@
         <h2>-everything to help the user-</h2>
     </div>
     </header>
-    
-    
-       
-        <section>
-            
-            <h1>semantic html structure</h1>
-            <p>On our main page we have used semantics tags like:
-                <br> &lt;header&gt;,&lt;nav&gt;,&lt;main&gt;,&lt;section&gt; and &lt;footer&gt; 
-                <br>to give our document structer, and help screen readers to navigate to diffrent desired parts.</p>
-        </section>
-    
-        <section>
-            <h1>alternative text for images</h1>
-            <p>We provide "alt" text for pictures, explaining their contents in case of pictures not showing or user is disabeled.</p>
-        </section>
-    
-        <section>
-            <h1>keyboard navigation</h1>
-            <p>If for some reason the user cannot see or use a mouse there is a possibility of using only tab to navigate to interactive elements like:<br>
-            Links, buttons, forms etc</p>
-        </section>
-    
-        <section>
-            <h1>clear focus indicators</h1>
-            <p>Visibal focus indicators to help users know their location on the website.</p>
-        </section>
-    
-        <section>
-            <h1>aria(accessible rich internet applications) landmarks and roles</h1>
-            <p>Implemented ARIA attributes to add extra information for assistive technologies(e.g screen readers) to understand dynamic content.<br>
-            This includes aria-label, aria-expanded, aria-live and adding roles like role="button".</p>
-        </section>
-    
-        <section>
-            <h1>text and content contrast</h1>
-            <p>Using colors that maintain a high contrast ratio between text and background. Help users read otherwise hard to read text.</p>
-        </section>
-    
-        <section>
-            <h1>responsive and scalable text</h1>
-            <p>making sure the layout stays intact while zooming to (e.g 200%) and ensuring it still looks good. This also includes making the site work on diffrent devices with diffrent display sizes.</p>
-        </section>
-    
-        <section>
-            <h1>descriptive links</h1>
-            <p>Links have text that describe where it will take you instead of being a link without context.</p>
-        </section>
+
+    <main>
+        <div class="accessibility-main">
+            <section>
+            <div class="wrapper">
+                <div class="collapsible">
+                    <input type="checkbox" id="collapsible-head1">
+                    <label for="collapsible-head1">Info</label>
+                    <div class="collapseble-text">
+                        <p>Our website incorporates a range of accessibility features to create an inclusive and user-friendly experience. By adhering to accessibility standards, we aim to provide a website that is easy to use and navigate for everyone, including people who rely on assistive technology.</p>
+                    </div>
+                </div>
+            </div>
+            </section>
         
-        <section>
-            <h1>forms and labels</h1>
-            <p>ensured every input element have a label element with descriptive text to explain its purpose.</p>
-        </section>
-    
-        <section>
-            <h1>skip navigation links</h1>
-            <p>"skip to content" links that takes you to diffrent parts of the document without repetetive navigation.</p>
-        </section>
-    
-        <section>
-            <h1>multimedia accessibility</h1>
-            <p>used captions, transcripts and audio descriptions for audio and video where it was possible. aria-live is a good exampel for dynamic content.</p>
-        </section>
-    
-        <section>
-            <h1>accessible language and readability</h1>
-            <p>clear and concise language at a readable level to make it easier to understand. We tried to avoid jargon and made plain and simple explanations for "complex information"</p>
-        </section>
-    
-        <section>
-            <h1>consistent layout</h1>
-            <p>tried to have a predictable layout that doesnt change across the page. e.g consistent navigation elements and structure.</p>
-        </section>
+            <section>
+            <div class="wrapper">
+                <div class="collapsible-large">
+                    <input type="checkbox" id="collapsible-head2">
+                    <label for="collapsible-head2">What we have done</label>
+                    <div class="collapseble-text-large">
+                        <p>To start, we provide descriptive “alt” text for images. This feature ensures that visually impaired users or users with slow internet connections can understand the content and purpose of images, even if they cannot see them. The alt text describes what is in the image, so users relying on screen readers can still engage fully with the content.<br><br>
+                                    
+                            Keyboard navigation is another priority, allowing users to navigate our site using only the keyboard. This feature is essential for those who cannot use a mouse due to disabilities. By pressing the Tab key, users can move between interactive elements like links, buttons, and form fields, providing a seamless browsing experience for keyboard-only users.<br><br>
+                            
+                            Text and content contrast play an essential role in readability. We carefully select colors that provide a high contrast ratio between text and background, making content accessible and comfortable to read for users with visual impairments or those in low-light environments. This approach helps all users to engage with the content more easily.<br><br>
+                            
+                            Our design is also responsive and scalable. The layout remains consistent and visually appealing when zoomed up to 200%, supporting users who need to enlarge text or images for better visibility. Additionally, the design adjusts well on various devices, from desktops to smartphones, ensuring a smooth experience across screen sizes.<br><br>
+                            
+                            We also use descriptive link text to provide users with context. Instead of vague labels like “click here,” each link clearly describes where it leads or what action it performs. This clarity is especially helpful for screen reader users, allowing them to navigate confidently without ambiguity.<br><br>
+                            
+                            Forms and labels are an integral part of user interaction on our site, and we ensure every input element has an associated label with descriptive text. These labels explain the purpose of each field, enabling users to complete forms accurately and easily, even when using assistive devices.<br><br>
+                            
+                            To further enhance accessibility, we prioritize clear and readable language throughout the site. We use simple and concise language, aiming to communicate information without jargon or complex terms. This accessible language approach ensures that users of all backgrounds and reading levels can understand the content effortlessly.<br><br>
+                            
+                            A consistent layout across all pages provides users with a predictable and intuitive experience. Navigation elements, buttons, and general structure remain the same throughout the site, allowing users to anticipate where to find essential information or actions. This consistency builds familiarity and confidence as users explore the site.<br><br>
+                            
+                            By implementing these accessibility features—such as alt text, keyboard navigation, text contrast, scalable design, descriptive links, labeled forms, accessible language, and a consistent layout—we aim to make our website accessible and enjoyable for all users. These efforts support an inclusive environment where everyone, regardless of their abilities, can interact with and benefit from our content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
