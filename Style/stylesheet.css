@@ -659,7 +659,7 @@ h1 a{
 }
 /* Content Divider (studiested) Slutt */
 
-/*Footer start*/
+/* Footer start */
 footer{
     background-color: var(--clr-darkblue);
 }
@@ -768,27 +768,24 @@ footer{
     text-decoration-line: underline;
     text-decoration-thickness: 2px;
 }
-/*Footer end*/
+/* Footer end */
 
-/*Accessibility*/
-
+/* Accessibility Start */
 .a-header{
    text-transform: uppercase;
 }
+
 .a-main{
-    
     background-color: var(--clr-lightblue);
-    
 }
+
 .a-main h1{
     text-transform: uppercase;
     color: var(--clr-darkblue);
     font-weight: bolder;
 }
+
 .a-main p{
     color:var(--clr-mediumblue)
-}
-.a-main section{
-    
 }
 
