@@ -125,6 +125,7 @@ nav ul a{
     color: var(--clr-paleblue);
     height: 20px;
     border-radius: 50px;
+    font-size: smaller;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -152,10 +153,6 @@ nav ul a{
     margin-right: 1rem;
     margin-top: 10px;
     z-index: 1;
-}
-
-.menu-toggle-label p{
-    font-weight: bold;
 }
 
 .dropdown-menu li {
@@ -235,11 +232,11 @@ header hr {
     margin: 0;
     font-weight: lighter;
     text-align: left;
+    font-weight: bolder;
 }
 
 #studieinformasjon .info h3:first-child {
-    color: var(--clr-paleblue);
-    font-weight: bolder;
+    color: var(--clr-lightblue);
 }
 
 .button-link {
