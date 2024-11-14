@@ -28,7 +28,7 @@
 
 /* https://www.youtube.com/watch?v=K24lUqcT0Ms, for the media queries */
 /* Wide Screen (21:9 - 2560 x 1080)  */
-@media (min-width: 2046px) {
+@media (min-width: 2046px){
     .programs{
         font-size: x-large;
     }
@@ -38,13 +38,13 @@
 }
 
 /* Portrait Screen - Iphone 14 Pro Max (430 x 932) */
-@media (max-width: 1151px) {
+@media (max-width: 1151px){
     html{
         font-size: x-small;
     }
 }
 
-@media (max-width: 429px) {
+@media (max-width: 429px){
     html{
         font-size: xx-small;
     }
@@ -664,7 +664,7 @@ footer{
     background-color: var(--clr-darkblue);
 }
 
-.Overskrift-container{
+.overskrift-container{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -673,7 +673,7 @@ footer{
     max-width: 80%;
 }
 
-#Fmain-overskrift{
+#fmain-overskrift{
     text-align: center;
     position: relative;
     color: var(--clr-lightblue);
@@ -684,7 +684,7 @@ footer{
 }
 
 /* The line underneath Fmain-overskrift */
-#Fmain-overskrift:after{
+#fmain-overskrift:after{
     content: "";
     position: absolute;
     left: 15%;
@@ -695,7 +695,7 @@ footer{
 }
 
 /* Abonner "button" */
-#Abonner{
+#abonner{
     border-radius: 3rem;
     border: 5px solid var(--clr-paleblue);
     padding: 1rem;
@@ -709,13 +709,13 @@ footer{
     font-weight: bold;
 }
 
-.Sosiale-medier{
+.sosiale-medier{
     width: 100%;
     text-align: center;
     justify-content: space-between;
 }
 
-.Sosiale-medier a{
+.sosiale-medier a{
     text-decoration: none;
     color:var(--clr-paleblue);
     text-transform: uppercase;
@@ -730,7 +730,7 @@ footer{
     padding: 2rem 10rem 2rem 10rem;
 }
 
-.Kontakt-oss{
+.kontakt-oss{
     flex: 1;
     text-align: left;
     line-height: 2px;
@@ -739,24 +739,24 @@ footer{
     margin-top: 4rem;
 }
 
-.Kontakt-oss :first-child{
+.kontakt-oss :first-child{
     font-weight: bold;
     color: var(--clr-lightblue);
 }
 
-.Kontakt-oss :last-child{
+.kontakt-oss :last-child{
     font-weight: bold;
     color:var(--clr-lightblue);
     text-decoration: none;
 }
 
-.Linker{
+.linker{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
-.Linker a{
+.linker a{
     flex: 2;
     text-align: right;
     text-decoration: none;
@@ -764,22 +764,20 @@ footer{
     text-transform: uppercase; 
 }
 
-.Linker a:hover, .Sosiale-medier a:hover, .Kontakt-oss a:hover{
+.linker a:hover, .sosiale-medier a:hover, .kontakt-oss a:hover{
     text-decoration-line: underline;
     text-decoration-thickness: 2px;
 }
 /* Footer end */
 
+/* Accessibility Start */
 #accessibility-bcolor{
     background-color: var(--clr-darkblue);
 }
 
-/* Accessibility Start */
-
 .a-header{
     text-transform: uppercase;
 }
-
 
 .collapsible-large{
     max-width: 1000px;
@@ -802,7 +800,7 @@ footer{
     border-radius:4px;
     z-index: 1;
     text-align: center;
-
+}
 
 .collapsible-large label:after{
     content:"";
@@ -813,7 +811,6 @@ footer{
     height: 18px;
     transition: all 0.3s ease;
 }
-
 
 .collapsible-large input:checked + label:after{
     transform: rotate(90deg);
@@ -845,12 +842,15 @@ footer{
     padding-right:15px ;
 }
 
-
-/*kan brukes for drop down meny for tekst*/
 .wrapper{
     display: flex;
     padding-top:50px;
     justify-content: center;
+}
+
+.wrapper label{
+    text-transform: uppercase;
+    color:var(--clr-paleblue);
 }
 
 .collapsible{
@@ -917,7 +917,4 @@ footer{
     padding-left:15px;
     padding-right:15px ;
 }
-
-
-/*dropdown meny end*/
 /*accessebility end*/
