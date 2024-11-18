@@ -967,8 +967,12 @@ footer{
 }
 /* Footer end */
 
-/* Accessibility Start */
-.a-header{
+
+#a-g-bcolor{
+    background-color: var(--clr-darkblue);
+}
+
+.a-g-header{
     text-transform: uppercase;
 }
 
@@ -993,6 +997,8 @@ footer{
     border-radius:4px;
     z-index: 1;
     text-align: center;
+    color: var(--clr-paleblue);
+    text-transform: uppercase;
 }
 
 .collapsible-large label:after{
@@ -1034,6 +1040,18 @@ footer{
     padding-left:15px;
     padding-right:15px ;
 }
+
+<
+.collapseble-text-large img{
+    width: 75%;
+    height: 75%;
+    margin: 20px auto 20px auto;
+    display: block;
+        
+}
+
+/*https://www.youtube.com/watch?v=RvpYnUZRquw&t=182s link til tutorial */
+/*kan brukes for drop down meny for tekst*/
 
 .wrapper{
     display: flex;
@@ -1098,7 +1116,7 @@ footer{
 }
 
 .collapsible input:checked ~ .collapseble-text{
-    max-height: 300px;
+    max-height:fit-content;
     padding-bottom:25px;
     background: var(--clr-mediumblue);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
@@ -1110,4 +1128,14 @@ footer{
     padding-left:15px;
     padding-right:15px ;
 }
+
+
+.collapseble-text-large h2, h3{
+    margin-bottom: 10px;
+    padding: 15px 15px 0;
+    color: var(--clr-paleblue);
+    text-transform: uppercase;
+}
+/*dropdown meny end*/
+
 /*accessebility end*/
