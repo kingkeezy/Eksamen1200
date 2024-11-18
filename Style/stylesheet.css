@@ -27,34 +27,231 @@
 }
 
 /* https://www.youtube.com/watch?v=K24lUqcT0Ms, for the media queries */
-/* Wide Screen (21:9 - 2560 x 1080)  */
-@media (min-width: 2046px) {
-    .programs{
-        font-size: x-large;
-    }
-    html{
-        font-size: x-large;
+
+/* Width for 2377 px */
+@media (max-width: 2377px){
+    .overskrift-container{
+        font-size: small;
     }
 }
 
-/* Portrait Screen - Iphone 14 Pro Max (430 x 932) */
-@media (max-width: 1151px) {
+/* Width for 2046 px */
+@media (min-width: 2046px){
+    section#studier{
+        font-size: x-large;
+    }
+
+}
+
+/* Width for 1588 px */
+@media (max-width: 1588px){
     html{
+        font-size: smaller;
+    }
+}
+
+/* Width for 1325 px */
+@media (max-width: 1325px){
+    h1#fmain-overskrift{
+        font-size: 25px;
+    }
+
+    section#studenthistorier .card{
+        max-width: 30rem;
+    }
+
+    section#studenthistorier p{
+        font-size: 15px;
+    }
+
+    section#studenthistorier h1 a{
+        font-size: 15px;
+    }
+}
+
+/* Width for 1090 px */
+@media (max-width: 1090px){
+    a#abonner.button-link{
+        font-size: 10px;
+    }
+
+    div.kontakt-linker,
+    div.sosiale-medier{
+        font-size: smaller;
+    }
+
+    header{
+        font-size: smaller;
+    }
+
+    section#studieinformasjonswrapper{
+        margin-left: 10rem;
+    }
+
+    div.info{
+        font-size: smaller;
+        padding: 1rem;
+    }
+    
+    section#content-divider-innsikt p{ 
+        font-size: 1.5rem;
+    }
+}
+
+/* width for 959 px */
+@media (max-width: 959px){
+    div.overskrift-container{
+        flex-direction: column;
+    }
+
+    a#abonner.button-link{
+        margin:auto;
+    }
+
+    div.sosiale-medier{
+        width:50%;
+        margin:auto;
+    }
+
+    div.kontakt-linker{
+        flex-direction: column;
+    }
+
+    div.kontakt-oss{
+        text-align: center;
+        margin-top: 0;
+    }
+
+    div.linker{
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    section#studieinformasjon{
+        display: block;
+    }
+
+    body nav{
+        justify-content: center;
+    }
+    body header h1{
+        font-size: 2.5rem;
+    }
+}
+
+/* width for 711px */
+@media (max-width: 711px){
+    label.menu-toggle-label{
+        font-size: 1rem;
+    }
+
+    li#search-bar{
+        height: 10px;
+    }
+
+    li#search-bar:hover input{
+        width: 4rem;
+    }
+
+    ul.dropdown-menu{
         font-size: x-small;
     }
+
+
+    body header h1{
+        font-size: 2rem;
+    }
+
+    section#studieinformasjonwrapper{
+        padding-left: 5rem;
+    }
+
+    section#content-divider-innsikt p{ 
+        font-size: 1rem;
+        padding: 2rem 2rem;
+        margin: 0 2rem;
+    }
+
+    section#dropdowns-container{
+        font-size: smaller;
+    }
+
+    section.dropdowns{
+        font-size: 1rem;
+    }
+
+    div#vertical-text{
+        position: relative;
+        margin: auto;
+        writing-mode: horizontal-tb;
+        background-color: var(--clr-darkblue);
+        transform:none;
+        color:var(--clr-paleblue);
+        text-align: center;
+        padding-right: 0;
+        height: auto;
+    }
+
+    div#vertical-text a{
+        color: var(--clr-grayblue)
+    }
+
+    section#content-divider-studiested{
+        font-size: 0.8rem;
+    }
+
+    section#content-divider-studiested a{
+        font-size: smaller;
+    }
+
+    h1#fmain-overskrift{
+        font-size: 10px;
+        padding: 0 2rem 2rem 2rem;
+    }
+
+    a#abonner.button-link{
+        width: 6rem;
+        border-width: 2px;
+    }
+
+    div.sosiale-medier{
+        width:auto;
+    }
+
+    div.kontakt-linker{
+        padding: 2rem;
+    }
+
+
 }
 
-@media (max-width: 429px) {
-    html{
-        font-size: xx-small;
+/* width for 550px */
+@media (max-width: 550px){
+    div.studiets-oppbygning-container table {
+        font-size: 0.6rem;
+    }
+
+    div.card:first-child{
+        font-size:x-small;
+    }
+
+    section#studier{
+        font-size: x-small; /* Smaller */
+    }
+    
+    div.programs a{
+        padding: 0 1rem;
     }
 }
+
+
 
 body {
     margin: 0;
     padding: 0;
     font-family: "Agrandir", sans-serif;
     overflow-x: hidden;
+    background-color: var(--clr-darkblue);
 }
 
 main {
@@ -629,8 +826,6 @@ h1 a{
 .programs p{
    font-weight: lighter;
 }
-
-
 /* Andre studiemuligheter start */
 
 /* Content Divider (Studiested) Start */
@@ -664,7 +859,7 @@ footer{
     background-color: var(--clr-darkblue);
 }
 
-.Overskrift-container{
+.overskrift-container{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -673,7 +868,7 @@ footer{
     max-width: 80%;
 }
 
-#Fmain-overskrift{
+#fmain-overskrift{
     text-align: center;
     position: relative;
     color: var(--clr-lightblue);
@@ -684,7 +879,7 @@ footer{
 }
 
 /* The line underneath Fmain-overskrift */
-#Fmain-overskrift:after{
+#fmain-overskrift:after{
     content: "";
     position: absolute;
     left: 15%;
@@ -695,27 +890,29 @@ footer{
 }
 
 /* Abonner "button" */
-#Abonner{
+#abonner{
     border-radius: 3rem;
     border: 5px solid var(--clr-paleblue);
     padding: 1rem;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--clr-paleblue);
-    font-size: 700;
-    align-self: center;
-    margin-bottom: 2rem;
     font-size: 1.5rem;
     font-weight: bold;
+    max-width: max-content;
 }
 
-.Sosiale-medier{
+#abonner:hover{
+    color: var(--clr-darkblue);
+}
+
+.sosiale-medier{
     width: 100%;
     text-align: center;
     justify-content: space-between;
 }
 
-.Sosiale-medier a{
+.sosiale-medier a{
     text-decoration: none;
     color:var(--clr-paleblue);
     text-transform: uppercase;
@@ -730,7 +927,7 @@ footer{
     padding: 2rem 10rem 2rem 10rem;
 }
 
-.Kontakt-oss{
+.kontakt-oss{
     flex: 1;
     text-align: left;
     line-height: 2px;
@@ -739,24 +936,24 @@ footer{
     margin-top: 4rem;
 }
 
-.Kontakt-oss :first-child{
+.kontakt-oss :first-child{
     font-weight: bold;
     color: var(--clr-lightblue);
 }
 
-.Kontakt-oss :last-child{
+.kontakt-oss :last-child{
     font-weight: bold;
     color:var(--clr-lightblue);
     text-decoration: none;
 }
 
-.Linker{
+.linker{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
-.Linker a{
+.linker a{
     flex: 2;
     text-align: right;
     text-decoration: none;
@@ -764,11 +961,12 @@ footer{
     text-transform: uppercase; 
 }
 
-.Linker a:hover, .Sosiale-medier a:hover, .Kontakt-oss a:hover{
+.linker a:hover, .sosiale-medier a:hover, .kontakt-oss a:hover{
     text-decoration-line: underline;
     text-decoration-thickness: 2px;
 }
 /* Footer end */
+
 
 #a-g-bcolor{
     background-color: var(--clr-darkblue);
@@ -777,7 +975,6 @@ footer{
 .a-g-header{
     text-transform: uppercase;
 }
-
 
 .collapsible-large{
     max-width: 1000px;
@@ -814,7 +1011,6 @@ footer{
     transition: all 0.3s ease;
 }
 
-
 .collapsible-large input:checked + label:after{
     transform: rotate(90deg);
 }
@@ -845,6 +1041,7 @@ footer{
     padding-right:15px ;
 }
 
+<
 .collapseble-text-large img{
     width: 75%;
     height: 75%;
@@ -855,10 +1052,16 @@ footer{
 
 /*https://www.youtube.com/watch?v=RvpYnUZRquw&t=182s link til tutorial */
 /*kan brukes for drop down meny for tekst*/
+
 .wrapper{
     display: flex;
     padding-top:50px;
     justify-content: center;
+}
+
+.wrapper label{
+    text-transform: uppercase;
+    color:var(--clr-paleblue);
 }
 
 .collapsible{
@@ -926,6 +1129,7 @@ footer{
     padding-right:15px ;
 }
 
+
 .collapseble-text-large h2, h3{
     margin-bottom: 10px;
     padding: 15px 15px 0;
@@ -933,4 +1137,5 @@ footer{
     text-transform: uppercase;
 }
 /*dropdown meny end*/
+
 /*accessebility end*/
