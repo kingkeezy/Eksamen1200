@@ -800,6 +800,8 @@ footer{
     border-radius:4px;
     z-index: 1;
     text-align: center;
+    color: var(--clr-paleblue);
+    text-transform: uppercase;
 }
 
 .collapsible-large label:after{
