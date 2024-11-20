@@ -236,8 +236,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Agrandir", sans-serif;
-    font-display: inherit;
+    font-family: sans-serif;
     overflow-x: hidden;
     background-color: var(--clr-darkblue);
 }
