@@ -1,5 +1,5 @@
 /* CONTENTS LIST
-- Family and roots
+- Roots
 - Media Queries
 - Navbar
 - Header
@@ -13,11 +13,6 @@
 - Accessibility page
 - GitHub page */
 
-/* Import font */
-@font-face {
-    font-family: 'Agrandir';
-    src: url('Media/Agrandir-Regular.otf');
-}
 
 /* Color variables */
 :root {
@@ -497,6 +492,7 @@ header hr {
     display: flex;
     align-items: flex-start;
     font-size: 1.5rem;
+    text-shadow: 1px 1px var(--clr-darkblue);
 }
 
 /* Styling for the plus and minus icons */
@@ -510,6 +506,7 @@ header hr {
     color: var(--clr-mediumblue);
     line-height: 1.5rem;
     font-size: 1rem;
+    text-shadow: none;
 }
 
 /* Open and close buttons */
@@ -901,6 +898,7 @@ footer{
     width: 100%;
     text-align: center;
     justify-content: space-between;
+    font-weight: bold;
 }
 
 .sosiale-medier a{
@@ -915,6 +913,7 @@ footer{
     flex-wrap: wrap;
     flex-direction: row;
     max-width: 90%;
+    font-weight: bold;
     padding: 2rem 10rem 2rem 10rem;
 }
 
