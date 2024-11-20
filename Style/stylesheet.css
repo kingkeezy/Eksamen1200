@@ -1,5 +1,5 @@
 /* CONTENTS LIST
-- Family and roots
+- Roots
 - Media Queries
 - Navbar
 - Header
@@ -9,13 +9,10 @@
 - Andre studiemuligheter
 - Studenthistorier
 - Content Divider (Studiested)
-- Footer */
+- Footer 
+- Accessibility page
+- GitHub page */
 
-/* Import font */
-@font-face {
-    font-family: 'Agrandir';
-    src: url('Media/Agrandir-Regular.otf');
-}
 
 /* Color variables */
 :root {
@@ -27,34 +24,221 @@
 }
 
 /* https://www.youtube.com/watch?v=K24lUqcT0Ms, for the media queries */
-/* Wide Screen (21:9 - 2560 x 1080)  */
-@media (min-width: 2046px) {
-    .programs{
-        font-size: x-large;
+/* Width for 2377 px */
+@media (max-width: 2377px){
+    .overskrift-container{
+        font-size: small;
     }
-    html{
+}
+
+/* Width for 2046 px */
+@media (min-width: 2046px){
+    section#studier{
         font-size: x-large;
     }
 }
 
-/* Portrait Screen - Iphone 14 Pro Max (430 x 932) */
-@media (max-width: 1151px) {
+/* Width for 1588 px */
+@media (max-width: 1588px){
     html{
+        font-size: smaller;
+    }
+}
+
+/* Width for 1325 px */
+@media (max-width: 1325px){
+    h1#fmain-overskrift{
+        font-size: 25px;
+    }
+
+    section#studenthistorier .card{
+        max-width: 30rem;
+    }
+
+    section#studenthistorier p{
+        font-size: 15px;
+    }
+
+    section#studenthistorier h1 a{
+        font-size: 15px;
+    }
+}
+
+/* Width for 1090 px */
+@media (max-width: 1090px){
+    header{
+        font-size: smaller;
+    }
+
+    section#studieinformasjonswrapper{
+        margin-left: 10rem;
+    }
+
+    div.info{
+        font-size: smaller;
+        padding: 1rem;
+    }
+    
+    section#content-divider-innsikt p{ 
+        font-size: 1.5rem;
+    }
+
+    a#abonner.button-link{
+        font-size: 10px;
+    }
+
+    div.kontakt-linker,
+    div.sosiale-medier{
+        font-size: smaller;
+    }
+}
+
+/* width for 959 px */
+@media (max-width: 959px){
+    div.overskrift-container{
+        flex-direction: column;
+    }
+
+    a#abonner.button-link{
+        margin:auto;
+    }
+
+    div.sosiale-medier{
+        width:50%;
+        margin:auto;
+    }
+
+    div.kontakt-linker{
+        flex-direction: column;
+    }
+
+    div.kontakt-oss{
+        text-align: center;
+        margin-top: 0;
+    }
+
+    div.linker{
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    section#studieinformasjon{
+        display: block;
+    }
+
+    body nav{
+        justify-content: center;
+    }
+    body header h1{
+        font-size: 2.5rem;
+    }
+}
+
+/* width for 711px */
+@media (max-width: 711px){
+    label.menu-toggle-label{
+        font-size: 1rem;
+    }
+
+    li#search-bar{
+        height: 1rem;
+    }
+
+    li#search-bar:hover input{
+        width: 4rem;
+    }
+
+    ul.dropdown-menu{
         font-size: x-small;
     }
+
+
+    body header h1{
+        font-size: 2rem;
+    }
+
+    section#studieinformasjonwrapper{
+        padding-left: 5rem;
+    }
+
+    section#content-divider-innsikt p{ 
+        font-size: 1rem;
+        padding: 2rem 2rem;
+        margin: 0 2rem;
+    }
+
+    section.dropdowns, section.dropdowns p{
+        font-size: smaller;
+    }
+
+    div#vertical-text{
+        position: relative;
+        margin: auto;
+        writing-mode: horizontal-tb;
+        background-color: var(--clr-darkblue);
+        transform:none;
+        color:var(--clr-paleblue);
+        text-align: center;
+        padding-right: 0;
+        height: auto;
+    }
+
+    div#vertical-text a{
+        color: var(--clr-grayblue);
+    }
+
+    section#content-divider-studiested{
+        font-size: 0.8rem;
+    }
+
+    section#content-divider-studiested a{
+        font-size: smaller;
+    }
+
+    h1#fmain-overskrift{
+        font-size: 1rem;
+        padding: 0 2rem 2rem 2rem;
+    }
+
+    a#abonner.button-link{
+        width: 6rem;
+        border-width: 2px;
+    }
+
+    div.sosiale-medier{
+        width:auto;
+    }
+
+    div.kontakt-linker{
+        padding: 2rem;
+    }
 }
 
-@media (max-width: 429px) {
-    html{
-        font-size: xx-small;
+/* width for 550px */
+@media (max-width: 550px){
+    div.studiets-oppbygning-container table {
+        font-size: 0.6rem;
+    }
+
+    div.card:first-child{
+        font-size:x-small;
+    }
+
+    section#studier{
+        font-size: x-small;
+    }
+    
+    div.programs a{
+        padding: 0 1rem;
     }
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-family: "Agrandir", sans-serif;
+    font-family: sans-serif;
     overflow-x: hidden;
+    background-color: var(--clr-darkblue);
 }
 
 main {
@@ -153,7 +337,7 @@ nav ul a{
     list-style-type: none;
     margin-right: 1rem;
     margin-top: 10px;
-    z-index: 1;
+    z-index: 10;
 }
 
 .dropdown-menu li {
@@ -183,6 +367,7 @@ header {
     flex-direction: column;
     color: var(--clr-paleblue);
     text-align: center;
+    text-shadow: 1px 2px black;
 }
 
 header h1 {
@@ -231,7 +416,6 @@ header hr {
 #studieinformasjon .info h3 {
     padding: 0;
     margin: 0;
-    font-weight: lighter;
     text-align: left;
     font-weight: bolder;
 }
@@ -254,6 +438,7 @@ header hr {
     margin-bottom: 3rem;
     text-decoration: none;
     transition: all 0.5s;
+    text-shadow: none;
 }
 
 .button-link:hover {
@@ -293,8 +478,8 @@ header hr {
     transform: translateY(-50%);
     padding-right: 8rem;
     height: 60%;
+    color: var(--clr-darkblue);
     text-transform: uppercase;
-    color: var(--clr-mediumblue);
     writing-mode: vertical-rl;
 }
 
@@ -307,7 +492,7 @@ header hr {
     display: flex;
     align-items: flex-start;
     font-size: 1.5rem;
-    font-weight: lighter;
+    text-shadow: 1px 1px var(--clr-darkblue);
 }
 
 /* Styling for the plus and minus icons */
@@ -321,6 +506,7 @@ header hr {
     color: var(--clr-mediumblue);
     line-height: 1.5rem;
     font-size: 1rem;
+    text-shadow: none;
 }
 
 /* Open and close buttons */
@@ -452,6 +638,7 @@ table td:last-child {
 }
 
 #faglig-leder h3 {
+    color: var(--clr-darkblue);
     text-transform: uppercase;
     font-weight: lighter;
     font-size: 2rem;
@@ -491,7 +678,6 @@ table td:last-child {
     font-weight: lighter;
     text-decoration: none;
 }
-
 /* Content divider (Faglig Leder) End */
 
 /* Studenthistorier Start */
@@ -571,7 +757,6 @@ h1 a{
 #button-studenthistorier:hover{
     background-color: var(--clr-lightblue);
     color: var(--clr-darkblue);
-
 }
 /* Studenthistorier End */
 
@@ -629,8 +814,6 @@ h1 a{
 .programs p{
    font-weight: lighter;
 }
-
-
 /* Andre studiemuligheter start */
 
 /* Content Divider (Studiested) Start */
@@ -664,7 +847,7 @@ footer{
     background-color: var(--clr-darkblue);
 }
 
-.Overskrift-container{
+.overskrift-container{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -673,7 +856,7 @@ footer{
     max-width: 80%;
 }
 
-#Fmain-overskrift{
+#fmain-overskrift{
     text-align: center;
     position: relative;
     color: var(--clr-lightblue);
@@ -684,7 +867,7 @@ footer{
 }
 
 /* The line underneath Fmain-overskrift */
-#Fmain-overskrift:after{
+#fmain-overskrift:after{
     content: "";
     position: absolute;
     left: 15%;
@@ -695,27 +878,31 @@ footer{
 }
 
 /* Abonner "button" */
-#Abonner{
+#abonner{
     border-radius: 3rem;
     border: 5px solid var(--clr-paleblue);
     padding: 1rem;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--clr-paleblue);
-    font-size: 700;
-    align-self: center;
-    margin-bottom: 2rem;
     font-size: 1.5rem;
     font-weight: bold;
+    max-width: max-content;
 }
 
-.Sosiale-medier{
+#abonner:hover{
+    color: var(--clr-darkblue);
+}
+
+.sosiale-medier{
     width: 100%;
     text-align: center;
     justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
-.Sosiale-medier a{
+.sosiale-medier a{
     text-decoration: none;
     color:var(--clr-paleblue);
     text-transform: uppercase;
@@ -727,11 +914,13 @@ footer{
     flex-wrap: wrap;
     flex-direction: row;
     max-width: 90%;
+    font-weight: bold;
     padding: 2rem 10rem 2rem 10rem;
 }
 
-.Kontakt-oss{
+.kontakt-oss{
     flex: 1;
+    font-size: 1.1rem;
     text-align: left;
     line-height: 2px;
     color: var(--clr-paleblue);
@@ -739,24 +928,26 @@ footer{
     margin-top: 4rem;
 }
 
-.Kontakt-oss :first-child{
+.kontakt-oss :first-child{
     font-weight: bold;
     color: var(--clr-lightblue);
 }
 
-.Kontakt-oss :last-child{
+.kontakt-oss :last-child{
     font-weight: bold;
     color:var(--clr-lightblue);
     text-decoration: none;
+    padding-top: 5px;
 }
 
-.Linker{
+.linker{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    gap: 5px;
 }
 
-.Linker a{
+.linker a{
     flex: 2;
     text-align: right;
     text-decoration: none;
@@ -764,28 +955,23 @@ footer{
     text-transform: uppercase; 
 }
 
-.Linker a:hover, .Sosiale-medier a:hover, .Kontakt-oss a:hover{
+.linker a:hover, .sosiale-medier a:hover, .kontakt-oss a:hover{
     text-decoration-line: underline;
     text-decoration-thickness: 2px;
 }
 /* Footer end */
 
-#accessibility-bcolor{
-    background-color: var(--clr-darkblue);
-}
-
-/* Accessibility Start */
-
-.a-header{
+/* Accessibility and GitHub start */
+.a-g-header{
     text-transform: uppercase;
 }
-
 
 .collapsible-large{
     max-width: 1000px;
     overflow: hidden;
     font-weight:500;
 }
+
 .collapsible-large input{
     display: none;
 }
@@ -802,7 +988,10 @@ footer{
     border-radius:4px;
     z-index: 1;
     text-align: center;
+    color: var(--clr-paleblue);
+    text-transform: uppercase;
 }
+
 
 .collapsible-large label:after{
     content:"";
@@ -814,10 +1003,10 @@ footer{
     transition: all 0.3s ease;
 }
 
-
 .collapsible-large input:checked + label:after{
     transform: rotate(90deg);
 }
+
 .collapseble-text-large{
     max-height: 1px;
     overflow: hidden;
@@ -845,12 +1034,23 @@ footer{
     padding-right:15px ;
 }
 
+.collapseble-text-large img{
+    width: 75%;
+    height: 75%;
+    margin: 20px auto 20px auto;
+    display: block;
+}
 
-/*kan brukes for drop down meny for tekst*/
+/* https://www.youtube.com/watch?v=RvpYnUZRquw&t=182s link for tutorial */
 .wrapper{
     display: flex;
     padding-top:50px;
     justify-content: center;
+}
+
+.wrapper label{
+    text-transform: uppercase;
+    color:var(--clr-paleblue);
 }
 
 .collapsible{
@@ -862,6 +1062,7 @@ footer{
 .collapsible input{
     display: none;
 }
+
 .collapsible label{
     position: relative;
     font-weight: 600;
@@ -905,7 +1106,7 @@ footer{
 }
 
 .collapsible input:checked ~ .collapseble-text{
-    max-height: 300px;
+    max-height:fit-content;
     padding-bottom:25px;
     background: var(--clr-mediumblue);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
@@ -918,6 +1119,13 @@ footer{
     padding-right:15px;
 }
 
+.collapseble-text-large h2, .collapseble-text-large h3{
+    margin-bottom: 10px;
+    padding: 15px 15px 0;
+    color: var(--clr-paleblue);
+    text-transform: uppercase;
+}
+/* Accessebility and GitHub end */
 
 /*dropdown meny end*/
 /*accessebility end*/

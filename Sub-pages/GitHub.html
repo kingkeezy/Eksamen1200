@@ -5,42 +5,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matematisk modellering og datavitenskap – ingeniør - OsloMet</title>
-    <link rel="shortcut icon" href="Media/OsloMetRe-design.png">
+    <link rel="shortcut icon" href="/Media/OsloMetRe-design.png">
     <!-- A stylesheet for our icons on the website (search, menu, circle-plus, etc.) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/Style/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="/Style/stylesheet.css">
 </head>
 
-<body>
-    <nav class="container">
+
+<body id="a-g-bcolor">
+    <nav>
         <!-- Logo -->
-        <img src="Media/OsloMetRe-design.png" alt="Oslomet Logo" width="100" height="100">
+        <img src="/Media/OsloMetRe-design.png" alt="Oslomet Logo" width="100" height="100">
         <!-- Navigation Links -->
         <ul>
-            <li>
-                <a href="#">
-                    <p>Søk</p>
+            <!-- Search Button -->
+            <li id="search-bar">
+                <form action="#">
+                    <input type="text" placeholder="Søk...">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                </a>
+                </form>
             </li>
+
+            <!-- Menu Button -->
             <li>
                 <!-- Hidden checkbox for toggling the dropdown -->
                 <input type="checkbox" id="menu-toggle" hidden>
                 <!-- Label for checkbox toggle, containing the "Meny" link -->
                 <label for="menu-toggle" class="menu-toggle-label">
-                    <p>Meny</p>
+                    <h2>Meny</h2>
                     <i class="fa-solid fa-bars"></i>
                 </label>
-                <!-- Dropdown menu -->
+                <!-- Dropdown menu that is hidden until menu-toggle is checked -->
                 <ul class="dropdown-menu">
-                    <li><a href="/">Hjem</a></li>
-                    <li><a href="Sub-pages/Accessibility.html">Accessibility</a></li>
-                    <li><a href="Sub-pages/Activity.html">Activity</a></li>
-                    <li><a href="Sub-pages/GitHub.html">Github</a></li>
+                    <li><a href="/index.html">Hjem</a></li>
+                    <li><a href="Accessibility.html">Accessibility</a></li>
+                    <li><a href="Activity.html">Activity</a></li>
+                    <li><a href="GitHub.html">Github</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
+ <header>
+    <div class="a-g-header">
+        <h1>github</h1>
+    </div>
+</header>
+<main>
+        <div class="wrapper">
+            <div class="collapsible-large">
+                <input type="checkbox" id="collapsible-head3">
+                <label for="collapsible-head3">collaboration</label>
+                <div class="collapseble-text-large">
+                    <h2>Benefits git/github</h2>
+                    <p>Git and GitHub provide numerous advantages for collaborative software development. Here are a few key benefits:<br><br>
+    
+                        <strong>1. Version Control and Recovery:</strong> Mistakes are inevitable, but Git allows developers to easily revert to a previous version of the project. This ensures that errors can be undone without disrupting progress.<br><br>
+                        <strong>2. Parallel Development:</strong> Regardless of team size, developers can create branches to work on different features or fixes independently. This minimizes conflicts and ensures that the main branch remains stable.<br><br>
+                        <strong>3. Collaborative Code Review:</strong> With pull requests, team members can systematically review, comment on, and suggest changes to each other’s code. This process improves code quality and ensures consensus before changes are merged into the main branch.<br><br>
+                        <strong>4. Detailed Commit History:</strong> Git provides a detailed record of changes, making it easy to track who made what changes and why. This transparency aids in debugging and accountability. 
+                    </p>
+                    <h3>our experience</h3>
+                    <p>While working on this project, we realized that we lacked sufficient experience with GitHub as a collaborative tool. Although we faced minor challenges, we were able to resolve them quickly.<br><br>
+
+                        One recurring issue was merge conflicts. Some team members were unfamiliar with resolving these conflicts, which occur when two branches modify the same part of a file. Watching tutorials and practicing conflict resolution helped us overcome this hurdle.<br><br>
+                        
+                        Another learning curve was ensuring frequent and small commits. Initially, some members would hold off committing changes for extended periods, which made it harder to track incremental progress. By adopting a habit of committing regularly, we improved our workflow and reduced the potential for large-scale conflicts.<br><br>
+                        
+                        
+                         </p>
+
+                    <h3>Lessons Learned</h3>
+                    <p>Git and GitHub are invaluable tools for team projects. Despite initial hiccups, we recognized the importance of regular communication, code reviews, and incremental commits. These practices not only streamline collaboration but also enhance the overall quality of the project.</p>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <div class="wrapper">
+            <div class="collapsible-large">
+                <input type="checkbox" id="collapsible-head4">
+                <label for="collapsible-head4">commit history</label>
+                <div class="collapseble-text-large">
+                    <div class="g-bilder">
+                      <img  src="../Media/commit1.png">
+                      <img src="../Media/commit2.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <div class="wrapper">
+            <div class="collapsible-large">
+                <input type="checkbox" id="collapsible-head5">
+                <label for="collapsible-head5">specific changes</label>
+                <div class="collapseble-text-large">
+                    <div class="g-bilder">
+                      <img  src="../Media/change1.png">
+                      <img src="../Media/change2.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+           
 </body>
+</html>
