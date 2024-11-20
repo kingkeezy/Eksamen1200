@@ -960,12 +960,13 @@ footer{
 /* Footer end */
 
 /* Accessibility and GitHub start */
+/* https://www.youtube.com/watch?v=RvpYnUZRquw&t=182s link for tutorial */
 .a-g-header{
     text-transform: uppercase;
 }
 
 .collapsible-large{
-    max-width: 50%;
+    max-width: 70%;
     overflow: hidden;
     font-weight:500;
 }
@@ -1039,7 +1040,6 @@ footer{
     display: block;
 }
 
-/* https://www.youtube.com/watch?v=RvpYnUZRquw&t=182s link for tutorial */
 .wrapper{
     display: flex;
     padding-top:3.1rem;
@@ -1049,72 +1049,6 @@ footer{
 .wrapper label{
     text-transform: uppercase;
     color:var(--clr-paleblue);
-}
-
-.collapsible{
-    max-width: 15%;
-    overflow: hidden;
-    font-weight:500;
-}
-
-.collapsible input{
-    display: none;
-}
-
-.collapsible label{
-    position: relative;
-    font-weight: 600;
-    background: var(--clr-mediumblue);
-    box-shadow: 0 0.3rem 0.6rem 0 rgba(0, 0, 0, .1), 0 0.25rem 0.688rem 0 rgba(0, 0, 0, .08);
-    display: block;
-    margin-bottom: 0.6rem;
-    cursor: pointer;
-    padding:0.9rem 0;
-    border-radius:0.25rem;
-    z-index: 1;
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--clr-paleblue);
-}
-
-.collapsible label:after{
-    content:"";
-    position: absolute;
-    right: 0.9rem;
-    top:0.9rem;
-    width: 1.1rem;
-    height: 1.1rem;
-    transition: all 0.3s ease;
-}
-
-.collapsible input:checked + label:after{
-    transform: rotate(90deg);
-}
-
-.collapseble-text{
-    max-height: 1px;
-    overflow: hidden;
-    border-radius:0.25rem;
-    line-height:1.4rem;
-    position: relative;
-    top:-100%;
-    opacity:0.5;
-    transition: all 0.3s ease;
-    color: var(--clr-paleblue);
-}
-
-.collapsible input:checked ~ .collapseble-text{
-    max-height:fit-content;
-    padding-bottom:1.563rem;
-    background: var(--clr-mediumblue);
-    box-shadow: 0 0.3rem 0.7rem 0 rgba(0, 0, 0, .1), 0 0.25rem 0.7rem 0 rgba(0, 0, 0, .08);
-    opacity: 1;
-    top:0;
-}
-
-.collapseble-text p{
-    padding-left:0.9rem;
-    padding-right:0.9rem;
 }
 
 .collapseble-text-large h2, .collapseble-text-large h3{
