@@ -253,10 +253,6 @@ nav {
     text-transform: uppercase;
 }
 
-nav img {
-    padding-left: 2rem;
-}
-
 nav ul {
     list-style-type: none;
     font-size: 20px;
