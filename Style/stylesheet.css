@@ -899,6 +899,7 @@ footer{
     text-align: center;
     justify-content: space-between;
     font-weight: bold;
+    font-size: 1.1rem;
 }
 
 .sosiale-medier a{
@@ -919,6 +920,7 @@ footer{
 
 .kontakt-oss{
     flex: 1;
+    font-size: 1.1rem;
     text-align: left;
     line-height: 2px;
     color: var(--clr-paleblue);
