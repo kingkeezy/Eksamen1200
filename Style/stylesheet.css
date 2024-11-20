@@ -146,7 +146,7 @@
     }
 
     li#search-bar{
-        height: 10px;
+        height: 1rem;
     }
 
     li#search-bar:hover input{
@@ -205,7 +205,7 @@
     }
 
     h1#fmain-overskrift{
-        font-size: 10px;
+        font-size: 1rem;
         padding: 0 2rem 2rem 2rem;
     }
 
@@ -234,7 +234,7 @@
     }
 
     section#studier{
-        font-size: x-small; /* Smaller */
+        font-size: x-small;
     }
     
     div.programs a{
@@ -376,6 +376,7 @@ header {
     flex-direction: column;
     color: var(--clr-paleblue);
     text-align: center;
+    text-shadow: 1px 2px black;
 }
 
 header h1 {
