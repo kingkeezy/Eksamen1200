@@ -47,16 +47,20 @@
 
 /* Width for 1325 px */
 @media (max-width: 1325px){
-    h1#fmain-overskrift{
-        font-size: 25px;
-    }
-
     section#studenthistorier p{
-        font-size: 15px;
+        font-size: 1rem;
     }
 
     section#studenthistorier h1 a{
-        font-size: 15px;
+        font-size: 1.2rem;
+    }
+
+    h1#fmain-overskrift{
+        font-size: 1.5rem;
+    }
+
+    a#abonner.button-link{
+        font-size: 1rem;
     }
 }
 
@@ -77,10 +81,6 @@
     
     section#content-divider-innsikt p{ 
         font-size: 1.5rem;
-    }
-
-    a#abonner.button-link{
-        font-size: 10px;
     }
 
     div.kontakt-linker,
@@ -268,7 +268,7 @@ nav {
 
 nav ul {
     list-style-type: none;
-    font-size: 20px;
+    font-size: 1.5rem;
     display: flex;
     flex-direction: row;
     margin-right: 2rem;
@@ -288,12 +288,12 @@ nav ul a{
 }
 
 #search-bar{
-    height: 20px;
+    height: 1.5rem;
     display: flex;
     cursor: pointer;
     padding: 0.5rem 1rem;
     align-items: center;
-    border-radius: 50px;
+    border-radius: 5rem;
     background-color: var(--clr-paleblue);
     color: var(--clr-darkblue);
 }
@@ -313,8 +313,8 @@ nav ul a{
 
 .menu-toggle-label {
     color: var(--clr-paleblue);
-    height: 20px;
-    border-radius: 50px;
+    height: 1.5rem;
+    border-radius: 5rem;
     font-size: smaller;
     display: flex;
     align-items: center;
@@ -337,16 +337,16 @@ nav ul a{
     right: 0;
     background-color: var(--clr-paleblue);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    padding: 10px;
+    border-radius: 1rem;
+    padding: 1rem;
     list-style-type: none;
     margin-right: 1rem;
-    margin-top: 10px;
+    margin-top: 1rem;
     z-index: 10;
 }
 
 .dropdown-menu li {
-    padding: 8px 12px;
+    padding: 0.6rem 0.8rem;
 }
 
 .dropdown-menu li a {
@@ -357,7 +357,7 @@ nav ul a{
 .dropdown-menu li a:hover {
     background-color: var(--clr-mediumblue);
     color: var(--clr-paleblue);
-    border-radius: 3px;
+    border-radius: 0.5rem;
 }
 
 #menu-toggle:checked+.menu-toggle-label+.dropdown-menu {
@@ -436,7 +436,7 @@ header hr {
     padding: 1rem 3rem;
     color: var(--clr-paleblue);
     background-color: var(--clr-darkblue);
-    border-radius: 50px;
+    border-radius: 5rem;
     border: none;
     font-size: 1rem;
     text-transform: uppercase;
@@ -507,7 +507,7 @@ header hr {
 
 /* Styling for p and ul elements inside a section */
 .dropdowns p, .dropdowns ul{
-    padding: 0 0 10px 40px;
+    padding: 0 0 1rem 2.6rem;
     color: var(--clr-mediumblue);
     line-height: 1.5rem;
     font-size: 1rem;
@@ -522,7 +522,7 @@ header hr {
     gap: 0.5rem;
     cursor: pointer;
     color: var(--clr-mediumblue);
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
     text-transform: uppercase;
 }
 
@@ -607,20 +607,20 @@ header hr {
 }
 
 #videre-studiemuligheter-info h3, #videre-studiemulighter-info p{
-    padding-left: 40px;
+    padding-left: 2.6rem;
     margin-bottom: 0;
     font-size: 1.5rem;
 }
 
 #videre-studiemuligheter-info p{
-    margin-top: 5px;
+    margin-top: 0.5rem;
 }
 
 /* Tables */
 table {
     background-color: var(--clr-mediumblue);
     padding: 2rem;
-    border-radius: 10px;
+    border-radius: 1rem;
     color: var(--clr-paleblue);
     text-align: left;
     font-size: 0.8rem;
@@ -730,7 +730,7 @@ h1 a{
 .card {
     max-width: 35rem;
     background-color: var(--clr-grayblue);
-    border-radius: 50px;
+    border-radius: 5rem;
     margin: 0 1rem 1rem 0;
 }
 
@@ -739,7 +739,7 @@ h1 a{
 }
 
 .card img {
-    border-radius: 50px;
+    border-radius: 5rem;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -774,7 +774,7 @@ h1 a{
    padding: 3rem;
    text-transform: uppercase;
    text-align: center;
-   margin-bottom: 20px;
+   margin-bottom: 1.5rem;
    font-size: 1.8rem;
 }
 
