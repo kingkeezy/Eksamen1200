@@ -51,8 +51,9 @@
         font-size: 1rem;
     }
 
-    section#studenthistorier h1 a{
+    section#studenthistorier h1 a, section#studenthistorier h2 a{
         font-size: 1.2rem;
+        color:var(--clr-darkblue);
     }
 
     h1#fmain-overskrift{
@@ -91,6 +92,18 @@
 
 /* width for 959 px */
 @media (max-width: 959px){
+    body nav{
+        justify-content: center;
+    }
+
+    body header h1{
+        font-size: 2.5rem;
+    }
+
+    section#studieinformasjon{
+        display: block;
+    }
+
     div.overskrift-container{
         flex-direction: column;
     }
@@ -117,17 +130,6 @@
         align-items: center;
         margin-top: 1rem;
     }
-
-    section#studieinformasjon{
-        display: block;
-    }
-
-    body nav{
-        justify-content: center;
-    }
-    body header h1{
-        font-size: 2.5rem;
-    }
 }
 
 /* width for 711px */
@@ -148,7 +150,6 @@
         font-size: x-small;
     }
 
-
     body header h1{
         font-size: 2rem;
     }
@@ -163,14 +164,6 @@
         margin: 0 2rem;
     }
 
-    section.dropdowns{
-        font-size: 1.2rem;
-    }
-
-    #videre-studiemuligheter-info a h3{
-        font-size: 1rem;
-    }
-
     div#vertical-text{
         position: relative;
         margin: auto;
@@ -183,12 +176,21 @@
         height: auto;
     }
 
+    section.dropdowns{
+        font-size: 1.2rem;
+    }
+
+    #videre-studiemuligheter-info a h3{
+        font-size: 1rem;
+    }
+
     div#vertical-text a{
         color: var(--clr-grayblue);
     }
 
     section#content-divider-studiested{
-        font-size: 1rem;
+        font-size: 1.2rem;
+        text-shadow: 1px 1px black;
     }
 
     section#content-divider-studiested a{
@@ -730,8 +732,9 @@ h1 a{
 .card {
     max-width: 35rem;
     background-color: var(--clr-grayblue);
-    border-radius: 5rem;
+    border-radius: 2.5rem;
     margin: 0 1rem 1rem 0;
+    border: 0.2rem solid var(--clr-darkblue);
 }
 
 .card:first-child {
@@ -739,7 +742,7 @@ h1 a{
 }
 
 .card img {
-    border-radius: 5rem;
+    border-radius: 2.5rem;
     width: 100%;
     height: 100%;
     object-fit: cover;
