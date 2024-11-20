@@ -51,10 +51,6 @@
         font-size: 25px;
     }
 
-    section#studenthistorier .card{
-        max-width: 30rem;
-    }
-
     section#studenthistorier p{
         font-size: 15px;
     }
@@ -689,7 +685,6 @@ table td:last-child {
 }
 
 #studenthistorier-title{
-    font-weight: lighter;
     font-size: 2rem;
 }
 
@@ -724,7 +719,7 @@ h1 a{
 }
 
 .card {
-    max-width: 39rem;
+    max-width: 35rem;
     background-color: var(--clr-grayblue);
     border-radius: 50px;
     margin: 0 1rem 1rem 0;
