@@ -206,7 +206,10 @@
     }
 
     div.sosiale-medier{
-        width:auto;
+        display:block;
+    }
+
+    div.sosiale-medier a{
     }
 
     div.kontakt-linker{
@@ -656,8 +659,6 @@ table td:last-child {
 }
 
 .faglig-leder-flex img {
-    height: 120px;
-    width: 90px;
     margin-right: 1rem; 
 }
 
@@ -895,9 +896,10 @@ footer{
 }
 
 .sosiale-medier{
+    display: flex;
     width: 100%;
-    text-align: center;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-evenly;
     font-weight: bold;
     font-size: 1.1rem;
 }
@@ -906,7 +908,6 @@ footer{
     text-decoration: none;
     color:var(--clr-paleblue);
     text-transform: uppercase;
-    margin: 0 10rem 0 10rem;
 }
 
 .kontakt-linker{
@@ -937,14 +938,14 @@ footer{
     font-weight: bold;
     color:var(--clr-lightblue);
     text-decoration: none;
-    padding-top: 5px;
+    padding-top: 1rem;
 }
 
 .linker{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 5px;
+    gap: 1rem;
 }
 
 .linker a{
