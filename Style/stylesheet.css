@@ -63,7 +63,7 @@
 /* Width for 1090 px */
 @media (max-width: 1090px){
     header{
-        font-size: smaller;
+        font-size: small;
     }
 
     section#studieinformasjonswrapper{
@@ -158,13 +158,17 @@
     }
 
     section#content-divider-innsikt p{ 
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding: 2rem 2rem;
         margin: 0 2rem;
     }
 
-    section.dropdowns, section.dropdowns p{
-        font-size: smaller;
+    section.dropdowns{
+        font-size: 1.2rem;
+    }
+
+    #videre-studiemuligheter-info a h3{
+        font-size: 1rem;
     }
 
     div#vertical-text{
@@ -184,7 +188,7 @@
     }
 
     section#content-divider-studiested{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     section#content-divider-studiested a{
@@ -194,11 +198,16 @@
     h1#fmain-overskrift{
         font-size: 1rem;
         padding: 0 2rem 2rem 2rem;
+        margin-bottom: 2rem;
     }
 
     a#abonner.button-link{
-        width: 6rem;
         border-width: 2px;
+    }
+
+    div.sosiale-medier{
+        flex-direction: column;
+        gap: 1rem;
     }
 
     div.kontakt-linker{
@@ -222,6 +231,14 @@
     
     div.programs a{
         padding: 0 1rem;
+    }
+
+    div.overskrift-container{
+        padding: 2rem;
+    }
+
+    div.kontakt-oss{
+        font-size: small;
     }
 }
 
@@ -838,7 +855,7 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     padding: 2rem 10rem 2rem 10rem;
-    max-width: 80%;
+    max-width: 90%;
 }
 
 #fmain-overskrift{
