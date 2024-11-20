@@ -438,6 +438,7 @@ header hr {
     margin-bottom: 3rem;
     text-decoration: none;
     transition: all 0.5s;
+    text-shadow: none;
 }
 
 .button-link:hover {
