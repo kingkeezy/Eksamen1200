@@ -990,6 +990,7 @@ footer{
     text-transform: uppercase;
 }
 
+
 .collapsible-large label:after{
     content:"";
     position: absolute;
@@ -1113,7 +1114,7 @@ footer{
 
 .collapseble-text p{
     padding-left:15px;
-    padding-right:15px ;
+    padding-right:15px;
 }
 
 .collapseble-text-large h2, .collapseble-text-large h3{
@@ -1123,3 +1124,179 @@ footer{
     text-transform: uppercase;
 }
 /* Accessebility and GitHub end */
+
+/*dropdown meny end*/
+/*accessebility end*/
+
+/* Activity page Start */
+.aktivitet-side {
+    background-color: rgba(4, 110, 27, 0.1)
+}
+@media (max-width: 600px) {
+    .aktivitet-liste {
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width: 601px) {
+    .aktivitet-liste {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.aktivitet-liste {
+    display: grid;
+    column-gap: 80px;
+    row-gap: 50px;
+    
+}
+
+.aktivitet {
+    display: grid;
+
+}
+#aktiv-bilde {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.aktiv-text {
+    background-color: rgb(158, 207, 158);
+    /*padding: 10px;*/
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: center;
+    
+}
+
+
+.side {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+  }
+
+.studier {
+    height: 100vh;
+}
+
+.studier h1 {
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 1.8em;
+    color: #1b7b60;
+}
+
+.studier {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #003366;
+}
+
+.flex-row {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;  
+    gap: 50px;
+    justify-content: center;
+    max-width: 1000px; 
+    padding: 20px;
+}
+.aktiv-nav {
+    margin-bottom: 20px;
+}
+.flex-row h2 {
+    margin-bottom: 0px;
+}
+
+.flex-container, .flex-container2 {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center;
+    width: 100%; 
+    color: aliceblue;
+}
+
+.container1, .container2 {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px; 
+    height: 150px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #1b7b60;
+    background-color: #e0edec;
+    transition: background-color 0.25s, 
+    color 0.25s;
+}
+
+.container1:hover, .container2:hover {
+    background-color: #1b7b60;
+    cursor: pointer;
+    color: #e0edec;
+    opacity: 0.8;
+}
+.container1:active, .container2:active {
+    opacity: 0.5;
+}
+
+#studier {
+    padding: 40px 0;
+    text-align: center;
+}
+
+#studier h1 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #003366;
+}
+
+/* Flex container for the program links */
+.programs {
+    display: flex;
+    flex-wrap: wrap; /* Enables wrapping of boxes to the next row */
+    gap: 20px; /* Space between the boxes */
+    justify-content: center; /* Centers the rows of boxes */
+    width: 100%; /* Make sure it uses full width */
+    max-width: 900px; /* Limit width to fit 4 boxes per row */
+    margin: 0 auto; /* Centers the container within the section */
+    padding: 0 20px; /* Adds padding to avoid touching screen edges */
+}
+
+/* Individual program links styled as boxes */
+.programs a {
+    background-color: rgb(0, 102, 51);
+    color: white;
+    border-radius: 15px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    width: calc(25% - 20px); /* Ensure 4 boxes per row, considering the gap */
+    height: 150px; /* Fixed height for uniform size */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* Include padding and borders in size */
+}
+
+/* Hover effect for the boxes */
+.programs a:hover {
+    background-color: #e0e0e0;
+    color: #336699;
+    cursor: pointer;
+}
+
+
+/*activity page end*/
+
