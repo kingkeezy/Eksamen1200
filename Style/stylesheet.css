@@ -43,19 +43,22 @@
     html{
         font-size: smaller;
     }
+
+    div.card{
+        max-height: 15rem;
+    }
+
+    div.card h3{
+        font-size: 1rem;
+    }
+
+    div.card p{
+        font-size: 1rem;
+    }
 }
 
 /* Width for 1325 px */
 @media (max-width: 1325px){
-    section#studenthistorier p{
-        font-size: 1rem;
-    }
-
-    section#studenthistorier h1 a, section#studenthistorier h2 a{
-        font-size: 1.2rem;
-        color:var(--clr-darkblue);
-    }
-
     h1#fmain-overskrift{
         font-size: 1.5rem;
     }
@@ -160,8 +163,8 @@
 
     section#content-divider-innsikt p{ 
         font-size: 1.2rem;
-        padding: 2rem 2rem;
-        margin: 0 2rem;
+        padding: 2rem 0rem;
+        margin: 0;
     }
 
     div#vertical-text{
@@ -186,6 +189,18 @@
 
     div#vertical-text a{
         color: var(--clr-grayblue);
+    }
+
+    section#faglig-leder{
+        font-size: 0.8rem;
+    }
+
+    section#faglig-leder h3{
+        font-size: 1.5rem;
+    }
+
+    div.card h3 a, div.card h2 a, div.card p{
+        font-size: smaller;
     }
 
     section#content-divider-studiested{
@@ -223,12 +238,17 @@
         font-size: 0.6rem;
     }
 
-    div.card:first-child{
-        font-size:x-small;
-    }
-
     section#studier{
         font-size: x-small;
+    }
+
+    section#studier h1, section#studenthistorier h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    div#card-container{
+        gap: 0;
     }
     
     div.programs a{
@@ -662,7 +682,7 @@ table td:last-child {
     transform: translateX(20px);
 }
 
-.faglig-leder-flex img {
+.faglig-leder-flex picture {
     margin-right: 1rem; 
 }
 
@@ -695,26 +715,8 @@ table td:last-child {
     text-transform: uppercase;
 }
 
-#studenthistorier-title{
+#studenthistorier h1{
     font-size: 2rem;
-}
-
-h1 a{
-    font-size: 2rem;
-    text-decoration: none;
-    color: var(--clr-darkblue);
-}
-
-#studenthistorier p {
-    font-size: 1.5rem;
-    text-transform: initial;
-}
-
-#studenthistorier p a, #studenthistorier h2 a{
-    margin-top: 2rem;
-    text-align: center;
-    text-decoration: none;
-    color:var(--clr-mediumblue);
 }
 
 #card-container {
@@ -725,28 +727,42 @@ h1 a{
     gap: 4rem;
 }
 
-#card-container a:hover, #card-container p a:hover, #card-container h2 a:hover{
-    text-decoration-line: underline;
-}
-
 .card {
+    max-height: 19rem;
     max-width: 35rem;
     background-color: var(--clr-grayblue);
     border-radius: 2.5rem;
     margin: 0 1rem 1rem 0;
-    border: 0.2rem solid var(--clr-darkblue);
+}
+
+.card h2 a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--clr-darkblue);
+}
+
+.card h3 a{
+    text-decoration: none;
+    color: var(--clr-mediumblue);
+    font-size: 1.5rem;
+}
+
+.card p {
+    font-size: 1.2rem;
+    text-transform: initial;
+}
+
+#card-container a:hover, #card-container p a:hover, #card-container h2 a:hover{
+    text-decoration-line: underline;
 }
 
 .card:first-child {
     padding: 1rem 1rem 0 1rem;
+    border: 0.2rem solid var(--clr-darkblue);
 }
 
-.card img {
+.card img{
     border-radius: 2.5rem;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: all 0.5s;
 }
 
 .card img:hover {
