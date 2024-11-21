@@ -1088,6 +1088,6 @@ footer{
 
 }
 .collapsible-large label:hover {
-    box-shadow: 0 0.3rem 0.7rem 0 rgba(255, 255, 255, 0.375), 0 0.25rem 0.7rem 0 rgba(255, 255, 255, 0.375);
+    box-shadow: inset 0 0 10px white;
 }
 /* Accessebility and GitHub end */
