@@ -1057,13 +1057,6 @@ footer{
     padding-right:0.9rem;
 }
 
-.collapseble-text-large img{
-    width: 75%;
-    height: 75%;
-    margin: 1.25rem auto 1.25rem auto;
-    display: block;
-}
-
 .wrapper{
     display: flex;
     padding-top:3.1rem;
@@ -1085,5 +1078,16 @@ footer{
 
 #last-box-margin-github{
     margin-bottom: 12.5rem;
+}
+
+.github-pictures{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+
+}
+.collapsible-large label:hover {
+    box-shadow: 0 0.3rem 0.7rem 0 rgba(255, 255, 255, 0.375), 0 0.25rem 0.7rem 0 rgba(255, 255, 255, 0.375);
 }
 /* Accessebility and GitHub end */
