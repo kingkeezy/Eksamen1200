@@ -1082,10 +1082,21 @@ footer{
 
 .github-pictures{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.github-pictures img{
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 .collapsible-large label:hover {
     box-shadow: inset 0 0 10px white;
