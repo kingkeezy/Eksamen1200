@@ -32,8 +32,8 @@
 }
 
 /* Width for 2046 px */
-@media (min-width: 2046px){
-    section#studier{
+@media (min-width: 2013px){
+    section#studier, section#studier h2{
         font-size: x-large;
     }
 }
@@ -89,7 +89,7 @@
 
     div.kontakt-linker,
     div.sosiale-medier{
-        font-size: smaller;
+        font-size: small;
     }
 }
 
@@ -192,7 +192,7 @@
     }
 
     section#faglig-leder{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     section#faglig-leder h3{
@@ -200,7 +200,7 @@
     }
 
     div.card h3 a, div.card h2 a, div.card p{
-        font-size: smaller;
+        font-size: small;
     }
 
     section#content-divider-studiested{
@@ -235,11 +235,11 @@
 /* width for 550px */
 @media (max-width: 550px){
     div.studiets-oppbygning-container table {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 
     section#studier{
-        font-size: x-small;
+        font-size: smaller;
     }
 
     section#studier h1, section#studenthistorier h1{
@@ -745,6 +745,7 @@ table td:last-child {
     text-decoration: none;
     color: var(--clr-mediumblue);
     font-size: 1.5rem;
+    text-shadow: 1px 1px var(--clr-darkblue);
 }
 
 .card p {
@@ -798,7 +799,7 @@ table td:last-child {
 }
 
 #studier h2{
-    font-size: 1.17em;
+    font-size: 1rem;
 }
 
 .programs{
@@ -809,7 +810,7 @@ table td:last-child {
    line-height: 0.3rem;
    flex-wrap: wrap;
    justify-content: center;
-   padding: 0 4rem 4rem 4rem;
+   padding: 0 3rem 3rem 3rem;
    gap: calc(15% - 3rem);
    row-gap: 4rem;
 }
@@ -1080,5 +1081,9 @@ footer{
     padding: 0.9rem 0.9rem 0;
     color: var(--clr-paleblue);
     text-transform: uppercase;
+}
+
+#last-box-margin-github{
+    margin-bottom: 12.5rem;
 }
 /* Accessebility and GitHub end */
