@@ -1111,6 +1111,9 @@ footer{
     flex-direction: column;
     justify-content: center;
 }
+#activity h1 {
+    text-transform: uppercase;
+}
 #activity-heading {
     display: flex;
     flex-direction: column;
