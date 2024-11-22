@@ -1163,6 +1163,11 @@ footer{
     color: var(--clr-paleblue);
     padding: 1rem 0 1rem 0;
 }
+
+#activity-routes a:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
 #activity-routes a {
     text-decoration: none;
     color: var(--clr-paleblue);
@@ -1170,6 +1175,7 @@ footer{
     flex-direction: column;
     padding: 2rem;
     text-decoration: none;
+    transition: 1s ease;
 }
 #activity-routes a:nth-child(1) {
     background-image: url(../Media/rallarvegen.webp);
@@ -1213,12 +1219,7 @@ footer{
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     flex-direction: row;
     justify-content: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-top: 2rem;
-}
-.activity-resource:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 .activity-resource h1 {
     font-size: 2rem;
@@ -1249,6 +1250,12 @@ footer{
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+.activity-resource a:hover {
+    text-decoration: underline;
+}
+.activity-resource ul li a {
+    padding: 0 1rem 0 1rem;
 }
 .activity-resource a:hover {
     color: var(--clr-darkblue);
