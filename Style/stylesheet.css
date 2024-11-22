@@ -1166,28 +1166,26 @@ footer{
 #activity-routes a {
     text-decoration: none;
     color: var(--clr-paleblue);
-}
-.activity-route {
     display: flex;
     flex-direction: column;
     padding: 2rem;
     text-decoration: none;
 }
-.activity-route:nth-child(1) {
+#activity-routes a:nth-child(1) {
     background-image: url(/Media/rallarvegen.webp);
     background-size: cover;
     background-position: 50% 50%;
     width: 30rem;
     height: 40rem;
 }
-.activity-route:nth-child(2) {
+#activity-routes a:nth-child(2) {
     background-image: url(/Media/lofoten.webp);
     background-size: cover;
     background-position: 50% 50%;
     width: 30rem;
     height: 40rem;
 }
-.activity-route:nth-child(3) {
+#activity-routes a:nth-child(3) {
     color: var(--clr-darkblue);
     background-image: url(/Media/mjostrokk.webp);
     background-size: cover;
