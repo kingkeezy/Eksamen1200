@@ -1193,4 +1193,65 @@ footer{
     width: 30rem;
     height: 40rem;
 }
+#activity-resources {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--clr-lightblue);
+    padding: 3rem;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    color: var(--clr-darkblue);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.activity-resource {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex-direction: row;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 2rem;
+}
+.activity-resource:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+.activity-resource h1 {
+    font-size: 2rem;
+    color: var(--clr-darkblue);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid var(--clr-darkblue);
+    padding-bottom: 0.5rem;
+}
+.activity-resource ul {
+    list-style: none;
+    padding: 0;
+}
+.activity-resource li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: flex-start;
+}
+.activity-resource li::before {
+    content: "✔️";
+    margin-right: 0.8rem;
+    font-size: 1.2rem;
+    color: var(--clr-darkblue);
+}
+.activity-resource a {
+    color: var(--clr-blue);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+.activity-resource a:hover {
+    color: var(--clr-darkblue);
+    text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+}
 /* Activity end */
