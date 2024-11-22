@@ -1172,14 +1172,14 @@ footer{
     text-decoration: none;
 }
 #activity-routes a:nth-child(1) {
-    background-image: url(/Media/rallarvegen.webp);
+    background-image: url(../Media/rallarvegen.webp);
     background-size: cover;
     background-position: 50% 50%;
     width: 30rem;
     height: 40rem;
 }
 #activity-routes a:nth-child(2) {
-    background-image: url(/Media/lofoten.webp);
+    background-image: url(../Media/lofoten.webp);
     background-size: cover;
     background-position: 50% 50%;
     width: 30rem;
@@ -1187,7 +1187,7 @@ footer{
 }
 #activity-routes a:nth-child(3) {
     color: var(--clr-darkblue);
-    background-image: url(/Media/mjostrokk.webp);
+    background-image: url(../Media/mjostrokk.webp);
     background-size: cover;
     background-position: 50% 50%;
     width: 30rem;
