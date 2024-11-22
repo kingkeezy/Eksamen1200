@@ -11,7 +11,8 @@
 - Content Divider (Studiested)
 - Footer 
 - Accessibility page
-- GitHub page */
+- GitHub page
+- Activity page */
 
 
 /* Color variables */
@@ -1102,3 +1103,96 @@ footer{
     box-shadow: inset 0 0 10px white;
 }
 /* Accessebility and GitHub end */
+
+
+/* Activity start */
+#activity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#activity-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url("../Media/family-biking.webp");
+    background-size: cover;
+    background-position: 70% 60%;
+    color: var(--clr-grayblue);
+    text-shadow: 1px 1px black;
+    font-size: 1.5rem;
+    padding: 1rem 6rem 1rem 6rem;
+    text-wrap: wrap;
+}
+#activity-sections {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--clr-mediumblue);
+    padding: 2rem 0 2rem 0;
+}
+#activity-sections .activity-card {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: var(--clr-grayblue);
+    border-radius: 2rem;
+    border: 3px solid var(--clr-darkblue);
+    max-width: 30rem;
+    color: var(--clr-darkblue);
+}
+#activity-sections .activity-card ul {
+    list-style-type: square;
+}
+#activity-sections .activity-card ul li span {
+    font-weight: bold;
+}
+#activity-best-routes h1 {
+    text-align: center;
+    color: var(--clr-paleblue);
+    padding-top: 2rem;
+    font-size: 3rem;
+}
+#activity-routes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--clr-darkblue);
+    color: var(--clr-paleblue);
+    padding: 1rem 0 1rem 0;
+}
+.activity-route {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    text-decoration: none;
+}
+.activity-routes a {
+    text-decoration: none;
+    color: var(--clr-paleblue);
+}
+.activity-route:nth-child(1) {
+    background-image: url(/Media/rallarvegen.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 30rem;
+    height: 40rem;
+}
+.activity-route:nth-child(2) {
+    background-image: url(/Media/lofoten.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 30rem;
+    height: 40rem;
+}
+.activity-route:nth-child(3) {
+    color: var(--clr-darkblue);
+    background-image: url(/Media/mjostrokk.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 30rem;
+    height: 40rem;
+}
+/* Activity end */
