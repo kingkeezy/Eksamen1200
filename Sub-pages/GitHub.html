@@ -58,10 +58,17 @@
     </header>
 
     <main>
+        <!--first dropdown menu. text that explains github purpose and our own experience.-->
+    <section>
+        <!--a flex box that wrapps around all children. takes full width.-->
         <div class="wrapper">
+            <!--spesifies the contents size relative to the wrapper-->
             <div class="collapsible-large">
+                <!--input element that works as a button-->
                 <input type="checkbox" id="collapsible-head3">
+                <!--heading for the button, the button style is applied here-->
                 <label for="collapsible-head3">collaboration</label>
+                <!--contet after button is pressed. dropdown-->
                 <div class="collapseble-text-large">
                     <h2>Benefits git/github</h2>
                     <p>Git and GitHub provide numerous advantages for collaborative software development. Here are a few key benefits:<br><br>
@@ -86,27 +93,28 @@
                 </div>
             </div>
         </div>
-        </section>
-
-            <section>    
+    </section>
+            <!--section for specific changes in github-->
+        <section>
+            <!--second dropwdown-->
                 <div class="wrapper">
                     <div class="collapsible-large">
                         <input type="checkbox" id="collapsible-head4">
-                        <label for="collapsible-head4">Commits History</label>
+                        <label for="collapsible-head4">Specific Changes</label>
                         <div class="collapseble-text-large">
-                            <p>Attached are our images showcasing the commits made to the code in GitHub. The submission includes two images for reference.</p>
+                            <p>Attached are our images displaying the specific changes from some of the commits. The submission includes two images for reference.</p>
                         </div>
                     </div>
                 </div>
-            </section>
-        <section>
-            <div class="github-pictures">     
+            <!--flex box that contains 2 pictures.-->
+            <div class="github-pictures">
+                <!--picture element that contains 3 pictures that appear relative to the page size-->
                 <picture>
                     <source srcset="../Media/change1-liten.webp" media="(max-width: 711px)">
                     <source srcset="../Media/change1-standard.webp" media="(min-width: 712px)">
                     <img src="../Media/change1.webp" alt="Bilde av kode endring fra github, bilde 1">
                 </picture>       
-            
+             <!--picture element that contains 3 pictures that appear relative to the page size-->
                 <picture>
                     <source srcset="../Media/change2-liten.webp" media="(max-width: 711px)">
                     <source srcset="../Media/change2-standard.webp" media="(min-width: 712px)">
@@ -114,24 +122,27 @@
                 </picture>
             </div>
         </section>
-            <section>    
+         <!--section for commit history-->
+        <section>
+            <!--dropdown for commit history-->
                 <div class="wrapper">
                     <div class="collapsible-large">
                         <input type="checkbox" id="collapsible-head5">
-                        <label for="collapsible-head5">Specific Changes</label>
+                        <label for="collapsible-head5">Commits History </label>
                         <div class="collapseble-text-large">
-                            <p>Attached are our images displaying the specific changes from some of the commits. The submission includes two images for reference.</p>
+                            <p>Attached are our images showcasing the commits made to the code in GitHub. The submission includes two images for reference.</p>
                         </div>
                     </div>
                 </div>
-            </section>
-        <section>
-            <div class="github-pictures">  
+            <!--flex box for the 2 pictures-->
+            <div class="github-pictures"> 
+                <!--picture element that contains 3 pictures that appear relative to the page size-->
                 <picture>
                     <source srcset="../Media/commit1-liten.webp" media="(max-width: 711px)">
                     <source srcset="../Media/commit1-standard.webp" media="(min-width: 712px)">
                     <img src="../Media/commit1.webp" alt="Bilde av kode commit fra github, bilde 1">
                 </picture>
+                <!--picture element that contains 3 pictures that appear relative to the page size-->
                 <picture>
                     <source srcset="../Media/commit2-liten.webp" media="(max-width: 711px)">
                     <source srcset="../Media/commit2-standard.webp" media="(min-width: 712px)">
