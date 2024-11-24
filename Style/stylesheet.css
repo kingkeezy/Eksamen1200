@@ -46,6 +46,11 @@
     div.activity-resource h1{
         font-size: 1.5rem;
     }
+
+    div#activity-routes a{
+        width: 25rem;
+        height: 35rem;;
+    }
 }
 
 /* Width for 1588 px */
