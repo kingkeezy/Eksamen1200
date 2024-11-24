@@ -263,6 +263,10 @@
     div.kontakt-oss{
         font-size: small;
     }
+
+    div.linker a{
+        text-align: center;
+    }
 }
 
 body {
