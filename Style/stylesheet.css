@@ -1225,6 +1225,10 @@ footer{
     list-style-type: square;
 }
 
+.activity-card ul li{
+    padding-bottom: 0.5rem;
+}
+
 #activity-sections .activity-card ul li span {
     font-weight: bold;
 }
