@@ -1028,6 +1028,11 @@ footer{
     top:0.9rem;
     width: 1.13rem;
     height: 1.13rem;
+    transition: all 0.3s ease;
+}
+
+.collapsible-large input:checked + label:after{
+    transform: rotate(90deg);
 }
 
 .collapseble-text-large{
@@ -1038,6 +1043,7 @@ footer{
     position: relative;
     top:-100%;
     opacity:0.5;
+    transition: all 1s ease;
     color: var(--clr-paleblue);
 }
 
