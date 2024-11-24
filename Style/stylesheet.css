@@ -25,6 +25,12 @@
 }
 
 /* https://www.youtube.com/watch?v=K24lUqcT0Ms, for the media queries */
+/* Width for 2013+ px */
+@media (min-width: 2013px){
+    section#studier, section#studier h2{
+        font-size: x-large;
+    }
+}
 /* Width for 2377 px */
 @media (max-width: 2377px){
     .overskrift-container{
@@ -32,10 +38,13 @@
     }
 }
 
-/* Width for 2046 px */
-@media (min-width: 2013px){
-    section#studier, section#studier h2{
-        font-size: x-large;
+@media (max-width:1750px){
+    section#activity-resources{
+        font-size: 1rem;
+    }
+
+    div.activity-resource h1{
+        font-size: 1.5rem;
     }
 }
 
@@ -58,8 +67,8 @@
     }
 }
 
-/* Width for 1325 px */
-@media (max-width: 1325px){
+/* Width for 1378 px */
+@media (max-width: 1378px){
     h1#fmain-overskrift{
         font-size: 1.5rem;
     }
@@ -67,6 +76,16 @@
     a#abonner.button-link{
         font-size: 1rem;
     }
+
+    div#activity-routes, section#activity-sections {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section#activity-heading{
+        font-size: 1rem;
+    }
+
 }
 
 /* Width for 1090 px */
@@ -91,6 +110,10 @@
     div.kontakt-linker,
     div.sosiale-medier{
         font-size: small;
+    }
+
+    section#activity-resources{
+        display: block;
     }
 }
 
@@ -133,6 +156,10 @@
     div.linker{
         align-items: center;
         margin-top: 1rem;
+    }
+
+    section#activity-best-routes h1{
+        font-size: 1.5rem;
     }
 }
 
@@ -231,6 +258,15 @@
     div.kontakt-linker{
         padding: 2rem;
     }
+
+    section#activity-heading{
+        padding: 1rem 1rem;
+    }
+
+    div#activity-routes a{
+        width: 20rem;
+        height: 30rem;
+    }
 }
 
 /* width for 550px */
@@ -266,6 +302,10 @@
 
     div.linker a{
         text-align: center;
+    }
+
+    section#activity-resources{
+        padding: 1rem;
     }
 }
 
@@ -1217,6 +1257,8 @@ footer{
     padding: 2rem;
     text-decoration: none;
     text-shadow: 1px 1px black;
+    width: 30rem;
+    height: 40rem;
 }
 
 #activity-routes a:nth-child(1) {
@@ -1224,8 +1266,6 @@ footer{
     color: var(--clr-paleblue);
     background-size: cover;
     background-position: 50% 50%;
-    width: 30rem;
-    height: 40rem;
 }
 
 #activity-routes a:nth-child(2) {
@@ -1233,8 +1273,6 @@ footer{
     color: var(--clr-lightblue);
     background-size: cover;
     background-position: 50% 50%;
-    width: 30rem;
-    height: 40rem;
 }
 
 #activity-routes a:nth-child(3) {
@@ -1242,8 +1280,6 @@ footer{
     color: var(--clr-darkblue);
     background-size: cover;
     background-position: 50% 50%;
-    width: 30rem;
-    height: 40rem;
 }
 
 #activity-routes a:hover {
@@ -1255,7 +1291,7 @@ footer{
 #activity-resources {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     background-color: var(--clr-darkblue);
     padding: 3rem;
